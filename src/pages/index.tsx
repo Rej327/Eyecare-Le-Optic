@@ -1,4 +1,6 @@
+import Navigation from "@/components/Navigation";
 import Head from "next/head";
+import variable from "../styles/variables.module.scss";
 
 export default function Home() {
   return (
@@ -9,10 +11,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <div>
-          <p>Eye Care Le Optic</p>
-        </div>
+      <main className={variable.main}>
+        <Navigation />
       </main>
     </>
   );
