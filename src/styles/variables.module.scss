@@ -1,11 +1,45 @@
-.main {
+$color-nav: rgb(70, 70, 70);
+$nav-hover: rgb(58, 58, 58);
+$bg-image: url("../assets/hero.jpg");
+
+.navSection {
   width: 1300px;
+  margin: 0 auto;
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    max-width: 1300px;
+
+    .logoContainer {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      .logoImage {
+        position: relative;
+      }
+
+      .logoName {
+        color: $color-nav;
+      }
+    }
+    .sectionList {
+      margin-left: auto;
+      display: flex;
+      gap: 15px;
+    }
+  }
 }
 
-.navigation {
-  display: flex;
-  position: fixed;
-  width: 1300px;
-  justify-content: space-evenly;
-  align-items: center;
+.heroBackground {
+  background-image: $bg-image;
+  object-fit: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

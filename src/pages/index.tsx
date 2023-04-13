@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Head from "next/head";
 import variable from "../styles/variables.module.scss";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <main className={variable.main}>
         <Navigation />
+        <Hero />
       </main>
     </>
   );
