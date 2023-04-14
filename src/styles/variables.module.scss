@@ -3,9 +3,14 @@
 
 $color-nav: rgb(243, 242, 242);
 $hover-color: #48ceff;
+$base-color: #48ceff;
+$sub-color: #263c44;
 $font: "Poppins", sans-serif;
-$nav-hover: rgb(58, 58, 58);
 $bg-image: url("../assets/hero.jpg");
+
+.body {
+  margin: 0;
+}
 
 .navSection {
   width: 1300px;
