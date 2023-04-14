@@ -1,6 +1,7 @@
 import Image from "next/image";
 import variable from "../styles/variables.module.scss";
 import logoImg from "../assets/logo.jpg";
+import Hamburger from "./Hamburger";
 
 export default function Navigation() {
   return (
@@ -39,6 +40,7 @@ export default function Navigation() {
             </a>
           </p>
         </div>
+        <Hamburger />
       </div>
     </div>
   );
