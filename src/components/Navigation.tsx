@@ -18,10 +18,26 @@ export default function Navigation() {
         </div>
 
         <div className={variable.sectionList}>
-          <p className="list">Eye Care Services</p>
-          <p className="list">Patient Center</p>
-          <p className="list">About Us</p>
-          <p className="list">(+63)-999-999-9999</p>
+          <p>
+            <a href="#" id="style-2" data-replace="Eye Care Services">
+              <span>Eye Care Services</span>
+            </a>
+          </p>
+          <p>
+            <a href="#" id="style-2" data-replace="Patient Center">
+              <span>Patient Center</span>
+            </a>
+          </p>
+          <p>
+            <a href="#" id="style-2" data-replace="About Us">
+              <span>About Us</span>
+            </a>
+          </p>
+          <p>
+            <a href="#" id="style-2" data-replace="(+63)-999-999-9999">
+              <span>(+63)-999-999-9999</span>
+            </a>
+          </p>
         </div>
       </div>
     </div>

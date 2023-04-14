@@ -1,4 +1,8 @@
-$color-nav: rgb(70, 70, 70);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap");
+
+$color-nav: rgb(243, 242, 242);
+$hover-color: #48ceff;
+$font: "Poppins", sans-serif;
 $nav-hover: rgb(58, 58, 58);
 $bg-image: url("../assets/hero.jpg");
 
@@ -12,6 +16,7 @@ $bg-image: url("../assets/hero.jpg");
     position: absolute;
     width: 100%;
     max-width: 1300px;
+    font-family: $font;
 
     .logoContainer {
       display: flex;
@@ -30,6 +35,64 @@ $bg-image: url("../assets/hero.jpg");
       margin-left: auto;
       display: flex;
       gap: 15px;
+      color: $color-nav;
+
+      a {
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+      }
+
+      a::before,
+      a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+      }
+      a::before {
+        background-color: $hover-color;
+        height: 2px;
+        bottom: 0;
+        transform-origin: 100% 50%;
+        transform: scaleX(0);
+        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+      a::after {
+        content: attr(data-replace);
+        height: 100%;
+        top: 0;
+        transform-origin: 100% 50%;
+        transform: translate3d(200%, 0, 0);
+        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+        color: $hover-color;
+        font-weight: 600;
+      }
+
+      a:hover::before {
+        transform-origin: 0% 50%;
+        transform: scaleX(1);
+      }
+      a:hover::after {
+        transform: translate3d(0, 0, 0);
+      }
+
+      a span {
+        display: inline-block;
+        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+
+      a:hover span {
+        transform: translate3d(-200%, 0, 0);
+      }
+
+      /* Presentational Styles */
+
+      a {
+        text-decoration: none;
+        color: $color-nav;
+        vertical-align: top;
+      }
     }
   }
 }
