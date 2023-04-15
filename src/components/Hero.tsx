@@ -1,7 +1,14 @@
 import variable from "@/styles/variables.module.scss";
-import heroBackground from "@/assets/hero.jpg";
-import Image from "next/image";
+import Button from "./Button";
 
 export default function Hero() {
-  return <div className={variable.heroBackground}></div>;
+  return (
+    <div className={variable.heroContainer}>
+      <div className={variable.content}>
+        <p className={variable.title}>Eye Care Le Optique</p>
+        <p className={variable.subTitle}>Eye Clinic</p>
+        <Button text="Learn More" />
+      </div>
+    </div>
+  );
 }

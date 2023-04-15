@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap");
+
+$color-nav: rgb(243, 242, 242);
+$hover-color: #48ceff;
+$base-color: #48ceff;
+$sub-color: #263c44;
+$font: "Poppins", sans-serif;
+$bg-image: url("../assets/hero.jpg");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,4 +17,12 @@ html,
 body {
   margin: 0;
   overflow-x: hidden;
+}
+
+h1 {
+  color: $base-color;
+}
+
+p {
+  color: $sub-color;
 }

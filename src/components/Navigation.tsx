@@ -15,7 +15,6 @@ export default function Navigation() {
             height={30}
             width={60}
           />
-          <p className={variable.logoName}>Eyecare le Optique</p>
         </div>
 
         <div className={variable.sectionList}>

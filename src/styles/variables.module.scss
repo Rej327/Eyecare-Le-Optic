@@ -108,7 +108,7 @@ $bg-image: url("../assets/hero.jpg");
   }
 }
 
-.heroBackground {
+.heroContainer {
   background-image: $bg-image;
   object-fit: cover;
   height: 100vh;
@@ -116,4 +116,24 @@ $bg-image: url("../assets/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+
+  .content {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+
+    .title {
+      color: $base-color;
+      font-size: 5rem;
+      font-family: $font;
+      line-height: 5rem;
+    }
+
+    .subTitle {
+      color: white;
+      font-size: 2rem;
+      font-family: $font;
+    }
+  }
 }
