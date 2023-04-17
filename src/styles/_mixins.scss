@@ -9,3 +9,9 @@
     @content;
   }
 }
+
+@mixin mobileMinWidth {
+  @media (min-width: 800px) {
+    @content;
+  }
+}

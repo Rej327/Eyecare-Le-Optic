@@ -1,6 +1,6 @@
 import variable from "@/styles/variables.module.scss";
 import Button from "./Button";
-import { STRING } from "../constant/string";
+import { STRING } from "../constant/String";
 
 const { heroTitle } = STRING;
 

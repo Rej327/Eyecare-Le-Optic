@@ -1,7 +1,7 @@
 //HERO 1ST SECTION
 const heroTitle = [
   {
-    title: "Eye Care Le Optic",
+    title: "Eyecare Le Optique",
     subTitle: "Eye Clinic",
     button: "Set Appointment",
   },
@@ -39,9 +39,19 @@ const aboutUsContent = [
   },
 ];
 
+const welcomeContent = [
+  {
+    head: "Welcome to Eyecare Le Optique",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quo ex neque ut mollitia nisi magni rerum ratione nostrum aliquam?",
+    name: "Doc. Name Name",
+    title: "Title",
+  },
+];
+
 export const STRING = {
   heroTitle,
   servicesContent,
   patientCenterContent,
   aboutUsContent,
+  welcomeContent,
 };

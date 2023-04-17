@@ -143,3 +143,39 @@ $bg-image: url("../assets/hero.jpg");
     }
   }
 }
+
+.welcomeSection {
+  @include mobileMinWidth() {
+    display: flex;
+    justify-content: center;
+    margin: 10rem auto;
+    width: 1300px;
+    align-items: center;
+  }
+
+  .context {
+    width: auto;
+    padding: 2rem 4rem;
+
+    font-family: $font;
+
+    .head {
+      color: $base-color;
+      font-weight: 700;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .desc {
+      font-size: 20px;
+      color: $sub-color;
+      margin-bottom: 1rem;
+    }
+
+    .name,
+    .title {
+      font-weight: 700;
+    }
+  }
+}
