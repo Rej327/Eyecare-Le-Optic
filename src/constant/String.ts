@@ -1,3 +1,5 @@
+import serviceList from "@/assets/serviceList.jpg";
+
 //HERO 1ST SECTION
 const heroTitle = [
   {
@@ -9,18 +11,33 @@ const heroTitle = [
 
 const servicesContent = [
   {
-    img: "Sample.png",
-    title: "Lorem",
+    img: serviceList,
+    title: "Lorem ipsum dolor.",
     desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, excepturi.",
   },
   {
-    img: "Sample.png",
-    title: "Lorem",
+    img: serviceList,
+    title: "Lorem ipsum dolor.",
     desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, excepturi.",
   },
   {
-    img: "Sample.png",
-    title: "Lorem",
+    img: serviceList,
+    title: "Lorem ipsum dolor.",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, excepturi.",
+  },
+  {
+    img: serviceList,
+    title: "Lorem ipsum dolor.",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, excepturi.",
+  },
+  {
+    img: serviceList,
+    title: "Lorem ipsum dolor.",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, excepturi.",
+  },
+  {
+    img: serviceList,
+    title: "Lorem ipsum dolor.",
     desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, excepturi.",
   },
 ];

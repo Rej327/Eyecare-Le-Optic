@@ -7,6 +7,8 @@ $base-color: #48ceff;
 $sub-color: #263c44;
 $font: "Poppins", sans-serif;
 $bg-image: url("../assets/hero.jpg");
+$bg-service: url("../assets/services.jpg");
+$header-size: 5rem;
 
 .body {
   margin: 0;
@@ -176,6 +178,40 @@ $bg-image: url("../assets/hero.jpg");
     .name,
     .title {
       font-weight: 700;
+    }
+  }
+}
+
+.serviceBg {
+  background-image: $bg-service;
+  background-color: black;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .serviceSection {
+    background-color: #004d6980;
+    font-family: $font;
+
+    .head {
+      text-align: center;
+      font-size: $header-size;
+      color: white;
+      line-height: $header-size;
+      padding: 5rem 0 3rem 0;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: auto;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+
+      .card {
+      }
     }
   }
 }

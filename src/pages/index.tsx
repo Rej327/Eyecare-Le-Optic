@@ -3,6 +3,7 @@ import Head from "next/head";
 import variable from "../styles/variables.module.scss";
 import Hero from "@/components/Hero";
 import Welcome from "@/components/Welcome";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Navigation />
         <Hero />
         <Welcome />
+        <Services />
       </main>
     </>
   );
