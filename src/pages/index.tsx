@@ -4,6 +4,7 @@ import variable from "../styles/variables.module.scss";
 import Hero from "@/components/Hero";
 import Welcome from "@/components/Welcome";
 import Services from "@/components/Services";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <Welcome />
         <Services />
+        <Card />
       </main>
     </>
   );

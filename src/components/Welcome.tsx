@@ -8,7 +8,10 @@ const { welcomeContent } = STRING;
 export default function Welcome() {
   return (
     <div className={variable.welcomeSection}>
-      <Image src={profile} alt="Doc. Chadilyn" height={350} width={350} />
+      <div className={variable.imgContainer}>
+        <Image src={profile} alt="Doc. Chadilyn" height={350} width={350} />
+      </div>
+
       {welcomeContent.map((data) => (
         <div className={variable.context}>
           <p className={variable.head}>{data.head}</p>
