@@ -25,7 +25,7 @@ export default function Card() {
         {servicesContent.map((data) => (
           <div className={variable.cardContainer}>
             <Image
-              src={serviceList}
+              src={data.img}
               width={0}
               height={250}
               alt="service"
