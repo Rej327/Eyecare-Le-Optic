@@ -9,7 +9,13 @@ export default function Welcome() {
   return (
     <div className={variable.welcomeSection}>
       <div className={variable.imgContainer}>
-        <Image src={profile} alt="Doc. Chadilyn" height={350} width={350} />
+        <Image
+          src={profile}
+          alt="Doc. Chadilyn"
+          height={350}
+          width={350}
+          className={variable.img}
+        />
       </div>
 
       {welcomeContent.map((data) => (
