@@ -7,7 +7,7 @@
   }
 
   color: #e0e4cc;
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.6;
   background: $hover-color;
   overflow-x: hidden;
@@ -18,8 +18,8 @@
       right: -100px;
       top: -100px;
       z-index: 100;
-      width: 200px;
-      height: 200px;
+      width: 175px;
+      height: 175px;
       background: #fff;
       border-radius: 50% 50% 50% 50%;
       -webkit-transition: 0.5s ease-in-out;
@@ -29,11 +29,11 @@
     }
     .hamburger {
       position: absolute;
-      top: 135px;
-      left: 50px;
-      width: 30px;
-      height: 2px;
-      background: #69d2e7;
+      top: 125px;
+      left: 33px;
+      width: 25px;
+      height: 1px;
+      background: $base-color;
       display: block;
       -webkit-transform-origin: center;
       transform-origin: center;
@@ -86,7 +86,7 @@
       position: absolute;
       text-align: center;
       top: 200px;
-      left: 45%;
+      left: 50%;
       width: 100%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);

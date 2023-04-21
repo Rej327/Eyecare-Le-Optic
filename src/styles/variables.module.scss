@@ -9,6 +9,7 @@ $font: "Poppins", sans-serif;
 $bg-image: url("../assets/hero.jpg");
 $bg-service: url("../assets/services.jpg");
 $header-size: 3.5rem;
+$mobileHeaderSize: 2rem;
 $header-weight: 600;
 
 .body {
@@ -32,6 +33,7 @@ $header-weight: 600;
       display: flex;
       gap: 5px;
       align-items: center;
+      margin-left: 10px;
 
       .logoImage {
         position: relative;
@@ -133,6 +135,11 @@ $header-weight: 600;
     text-align: center;
 
     .title {
+      @include mobile() {
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+      }
+
       color: $base-color;
       font-size: 5rem;
       font-family: $font;
@@ -141,6 +148,11 @@ $header-weight: 600;
     }
 
     .subTitle {
+      @include mobile() {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+      }
+
       color: white;
       font-size: 2rem;
       font-family: $font;
@@ -167,11 +179,21 @@ $header-weight: 600;
   }
 
   .context {
+    @include mobile() {
+      width: auto;
+      padding: 2rem;
+      text-align: justify;
+    }
+
     width: auto;
     padding: 2rem 4rem;
     font-family: $font;
 
     .head {
+      @include mobile() {
+        font-size: 2rem;
+      }
+
       color: $base-color;
       font-weight: 700;
       text-align: center;
@@ -210,6 +232,10 @@ $header-weight: 600;
     font-family: $font;
 
     .head {
+      @include mobile() {
+        font-size: $mobileHeaderSize;
+      }
+
       text-align: center;
       font-size: $header-size;
       color: white;
@@ -226,6 +252,11 @@ $header-weight: 600;
   margin: 2rem auto;
 
   .head {
+    @include mobile() {
+      font-size: $mobileHeaderSize;
+      padding: 2rem 0;
+    }
+
     margin: auto;
     width: auto;
     font-family: $font;
@@ -247,6 +278,11 @@ $header-weight: 600;
     }
 
     .card {
+      @include mobile() {
+        width: 360px;
+        height: auto;
+      }
+
       filter: drop-shadow(0 5px 10px 0 #ffffff);
       width: 400px;
       height: auto;

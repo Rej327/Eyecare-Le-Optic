@@ -31,14 +31,14 @@ const servicesContent = [
     desc: " We perform a vision test to determine if you need prescription glasses for use in distance, intermediate vision, and/or near. We combine automated, objective and subjective refraction methods to determine your accurate and best refraction.",
   },
   {
-    img: list4,
-    title: "Dry Eye Management ",
-    desc: " A test to diagnose and classify dry eye disease based on your symptoms and clinical signs. Our clinic performs clinically-validated tests to determine if you have dry eye.",
-  },
-  {
     img: list5,
     title: "Contact Lens Evaluation for: ",
     desc: " Children and Adults, First Time Wearers, Toric Lenses for Astigmatism, Bifocal and Multifocal, Colored Contacts ",
+  },
+  {
+    img: list4,
+    title: "Dry Eye Management ",
+    desc: " A test to diagnose and classify dry eye disease based on your symptoms and clinical signs. Our clinic performs clinically-validated tests to determine if you have dry eye.",
   },
   {
     img: list6,
