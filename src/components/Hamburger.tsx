@@ -13,7 +13,7 @@ export default function Hamburger() {
             <a href="#">Eye Care Services</a>
           </li>
           <li>
-            <a href="#">Patient Center</a>
+            <a href="#">Our Doctor</a>
           </li>
           <li>
             <a href="#">About Us</a>

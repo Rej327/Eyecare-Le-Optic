@@ -2,6 +2,7 @@ import Image from "next/image";
 import variable from "../styles/variables.module.scss";
 import logoImg from "../assets/logo.jpg";
 import Hamburger from "./Hamburger";
+import Link from "next/link";
 
 export default function Navigation() {
   return (
@@ -19,14 +20,14 @@ export default function Navigation() {
 
         <div className={variable.sectionList}>
           <p>
-            <a href="#" id="style-2" data-replace="Eye Care Services">
+            <Link href="/" id="style-2" data-replace="Eye Care Services">
               <span>Eye Care Services</span>
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="#" id="style-2" data-replace="Patient Center">
-              <span>Patient Center</span>
-            </a>
+            <Link href="/Our-Doctor" id="style-2" data-replace="Our Doctor">
+              <span>Our Doctor</span>
+            </Link>
           </p>
           <p>
             <a href="#" id="style-2" data-replace="About Us">
