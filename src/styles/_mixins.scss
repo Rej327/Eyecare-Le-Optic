@@ -4,6 +4,12 @@
   }
 }
 
+@mixin smallMobile {
+  @media (max-width: 428px) {
+    @content;
+  }
+}
+
 @mixin mobileNavToogle {
   @media (min-width: 800px) {
     @content;

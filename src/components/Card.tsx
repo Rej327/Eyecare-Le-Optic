@@ -10,7 +10,7 @@ export default function Card() {
   const breakpointColumnsObj = {
     default: 3,
     1024: 3,
-    834: 2,
+    768: 2,
     414: 1,
   };
 

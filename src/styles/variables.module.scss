@@ -282,8 +282,8 @@ $header-weight: 600;
     }
 
     .card {
-      @include mobile() {
-        width: 360px;
+      @include smallMobile() {
+        max-width: 400px;
         height: auto;
       }
 
