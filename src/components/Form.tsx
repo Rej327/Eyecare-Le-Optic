@@ -18,9 +18,6 @@ export default function From() {
               required
               type="text"
             />
-            <button className={variable.reset} type="reset">
-              <Reset />
-            </button>
           </div>
           <div className={variable.form}>
             <button>
@@ -32,9 +29,6 @@ export default function From() {
               required
               type="text"
             />
-            <button className={variable.reset} type="reset">
-              <Reset />
-            </button>
           </div>
           <div className={variable.form}>
             <button>
@@ -46,9 +40,6 @@ export default function From() {
               required
               type="text"
             />
-            <button className={variable.reset} type="reset">
-              <Reset />
-            </button>
           </div>
           <div className={variable.dateTime}>
             <div className={variable.form}>
@@ -61,9 +52,6 @@ export default function From() {
                 required
                 type="date"
               />
-              <button className={variable.reset} type="reset">
-                <Reset />
-              </button>
             </div>
             <div className={variable.form}>
               <button>
@@ -75,9 +63,6 @@ export default function From() {
                 required
                 type="time"
               />
-              <button className={variable.reset} type="reset">
-                <Reset />
-              </button>
             </div>
           </div>
           <div className={variable.btn}>
