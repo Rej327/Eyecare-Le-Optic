@@ -1,4 +1,6 @@
 import variable from "../styles/form.module.scss";
+import Button from "./Button";
+import style from "../styles/globalButton.module.scss";
 import { Reset, Name, Email, Number, Date, Time } from "./Logo";
 
 export default function From() {
@@ -48,33 +50,38 @@ export default function From() {
               <Reset />
             </button>
           </div>
-          <div className={variable.form}>
-            <button>
-              <Date />
-            </button>
-            <input
-              className={variable.input}
-              placeholder="Contact Number"
-              required
-              type="date"
-            />
-            <button className={variable.reset} type="reset">
-              <Reset />
-            </button>
+          <div className={variable.dateTime}>
+            <div className={variable.form}>
+              <button>
+                <Date />
+              </button>
+              <input
+                className={variable.input}
+                placeholder="Select Date"
+                required
+                type="date"
+              />
+              <button className={variable.reset} type="reset">
+                <Reset />
+              </button>
+            </div>
+            <div className={variable.form}>
+              <button>
+                <Time />
+              </button>
+              <input
+                className={variable.input}
+                placeholder="Select Time"
+                required
+                type="time"
+              />
+              <button className={variable.reset} type="reset">
+                <Reset />
+              </button>
+            </div>
           </div>
-          <div className={variable.form}>
-            <button>
-              <Time />
-            </button>
-            <input
-              className={variable.input}
-              placeholder="Contact Number"
-              required
-              type="time"
-            />
-            <button className={variable.reset} type="reset">
-              <Reset />
-            </button>
+          <div className={variable.btn}>
+            <Button className={style.button} text="Set Appointment" />
           </div>
         </form>
       </div>

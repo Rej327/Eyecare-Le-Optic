@@ -235,10 +235,14 @@ $doc-image-radius: 50% 0 50% 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom-right-radius: 50% 20%;
+  border-top-left-radius: 50% 20%;
 
   .serviceSection {
     background-color: #004d6980;
     font-family: $font;
+    border-bottom-right-radius: 50% 20%;
+    border-top-left-radius: 50% 20%;
 
     .head {
       @include mobile() {
@@ -439,6 +443,16 @@ $doc-image-radius: 50% 0 50% 0;
 
 .bookSchedSection {
   display: flex;
-  width: 700px;
-  justify-content: space-between;
+  padding: 1rem;
+  max-width: 900px;
+  justify-content: space-evenly;
+  margin: auto;
+  background: rgb(248, 248, 248);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  .image {
+    border-top-left-radius: 40% 20%;
+    border-bottom-right-radius: 40% 20%;
+  }
 }

@@ -1,5 +1,6 @@
 import variable from "@/styles/variables.module.scss";
 import Button from "./Button";
+import style from "../styles/globalButton.module.scss";
 import { STRING } from "../constant/String";
 
 const { heroTitle } = STRING;
@@ -12,7 +13,7 @@ export default function Hero() {
           <div className={variable.content}>
             <p className={variable.title}>{data.title}</p>
             <p className={variable.subTitle}>{data.subTitle}</p>
-            <Button text={data.button} />
+            <Button className={style.button} text={data.button} />
           </div>
         </div>
       ))}

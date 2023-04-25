@@ -1,9 +1,8 @@
-$form-width: 200px;
+$form-width: 400px;
 $form-height: 40px;
 $form-border-height: 2px;
 $form-bg: #c8f0ff;
 $form-border-color: #05d7fc;
-
 $form-border-radius: 30px;
 $form-after-border-radius: 1px;
 $form-timing: 0.3s;
@@ -11,7 +10,7 @@ $form-timing: 0.3s;
 .form {
   margin: 1rem;
   position: relative;
-  width: $form-width;
+  max-width: $form-width;
   height: $form-height;
   display: flex;
   align-items: center;
@@ -81,4 +80,17 @@ $form-timing: 0.3s;
     width: 17px;
     margin-top: 3px;
   }
+}
+
+.dateTime {
+  margin-top: -1rem;
+  display: flex;
+}
+
+.btn {
+  width: auto;
+  margin: -1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

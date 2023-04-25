@@ -18,10 +18,13 @@ html,
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: $font;
 }
 
 h1 {
   color: $base-color;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 p {
