@@ -123,11 +123,15 @@ $doc-image-radius: 50% 0 50% 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom-left-radius: 40% 10%;
+  border-bottom-right-radius: 40% 10%;
 
   .bg {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
     display: flex;
+    border-bottom-left-radius: 40% 10%;
+    border-bottom-right-radius: 40% 10%;
   }
 
   .content {
@@ -431,4 +435,10 @@ $doc-image-radius: 50% 0 50% 0;
       }
     }
   }
+}
+
+.bookSchedSection {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
 }

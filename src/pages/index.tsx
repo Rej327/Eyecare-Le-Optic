@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Welcome from "@/components/Welcome";
 import Services from "@/components/Services";
 import Card from "@/components/Card";
+import BookSched from "@/components/BookSched";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Welcome />
         <Services />
         <Card />
+        <BookSched />
       </main>
     </>
   );
