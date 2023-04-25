@@ -6,6 +6,7 @@ import Welcome from "@/components/Welcome";
 import Services from "@/components/Services";
 import Card from "@/components/Card";
 import BookSched from "@/components/BookSched";
+import OurClinic from "@/components/OurClinic";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Services />
         <Card />
         <BookSched />
+        <OurClinic />
       </main>
     </>
   );
