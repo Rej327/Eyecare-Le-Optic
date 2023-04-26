@@ -9,6 +9,7 @@ import Services from "@/components/Services";
 import Card from "@/components/Card";
 import OurClinic from "@/components/OurClinic";
 import Appointment from "@/components/Appointment";
+import ProductOffers from "@/components/ProductOffers";
 
 export default function Home() {
 	return (
@@ -27,6 +28,7 @@ export default function Home() {
 				<Card />
 				<Appointment />
 				<OurClinic />
+				<ProductOffers />
 			</main>
 		</>
 	);
