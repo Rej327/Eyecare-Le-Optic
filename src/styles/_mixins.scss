@@ -1,23 +1,31 @@
+/** @format */
+
 @mixin mobile {
-  @media (max-width: 800px) {
-    @content;
-  }
+	@media (max-width: 800px) {
+		@content;
+	}
 }
 
 @mixin smallMobile {
-  @media (max-width: 640px) {
-    @content;
-  }
+	@media (max-width: 640px) {
+		@content;
+	}
 }
 
 @mixin mobileNavToogle {
-  @media (min-width: 800px) {
-    @content;
-  }
+	@media (min-width: 800px) {
+		@content;
+	}
 }
 
 @mixin mobileMinWidth {
-  @media (min-width: 800px) {
-    @content;
-  }
+	@media (min-width: 800px) {
+		@content;
+	}
+}
+
+@mixin minWidth {
+	@media (min-width: 1300px) {
+		@content;
+	}
 }
