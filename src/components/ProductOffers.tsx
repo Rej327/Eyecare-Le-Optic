@@ -4,9 +4,13 @@ import variable from "@/styles/variables.module.scss";
 
 export default function ProductOffers() {
 	return (
-		<div className={variable.productOffers}>
-			<p>OTHER PRODUCT OFFER</p>
-			<div className={variable.products}></div>
+		<div>
+			<p className={variable.productOffers}>OTHER PRODUCT OFFER</p>
+			<div className={variable.productsContainer}>
+				<div className={variable.products}></div>
+				<div className={variable.products}></div>
+				<div className={variable.products}></div>
+			</div>
 		</div>
 	);
 }

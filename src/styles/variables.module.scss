@@ -501,16 +501,28 @@ $doc-image-radius: 50% 0 50% 0;
 }
 
 .productOffers {
-	margin: 5rem auto;
 	background-color: $base-color;
+	text-align: center;
+	font-size: 2rem;
+	letter-spacing: 10px;
+	color: white;
+	font-weight: 700;
+	padding-top: 4rem;
+	padding-bottom: 12rem;
+	margin: 5rem auto;
 	width: auto;
+}
 
-	p {
-		text-align: center;
-		font-size: 2rem;
-		letter-spacing: 10px;
-		color: white;
-		font-weight: 700;
-		padding: 2rem;
+.productsContainer {
+	width: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	.products {
+		border: 1px solid black;
+		width: 400px;
+		height: 300px;
+		margin-top: -10%;
 	}
 }
