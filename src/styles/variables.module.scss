@@ -5,13 +5,8 @@
 
 $color-nav: rgb(243, 242, 242);
 $hover-color: #48ceff;
-<<<<<<< HEAD
 $base-color: #00bbff;
 $sub-color: #253941;
-=======
-$base-color: #48ceff;
-$sub-color: #535353;
->>>>>>> d33e9704ab5f3becede01989aa20b4759c693aa4
 $font: "Poppins", sans-serif;
 $bg-image: url("../assets/hero.jpg");
 $bg-service: url("../assets/services.jpg");
@@ -506,33 +501,29 @@ $doc-image-radius: 50% 0 50% 0;
 }
 
 .welcomeSection {
- 
-  @include mobileMinWidth() {
-  display: flex;
-  justify-content: center;
-  margin: 10rem auto;
-  width: 1300px;
-}
+	@include mobileMinWidth() {
+		display: flex;
+		justify-content: center;
+		margin: 10rem auto;
+		width: 1300px;
+	}
 
+	.context {
+		width: auto;
+		padding: 2rem 4rem;
+		font-family: $font;
 
+		.head {
+			color: $base-color;
+			font-weight: 700;
+			text-align: center;
+			font-size: 2.5rem;
+			margin-bottom: 20px;
+		}
 
-.context {
-width: auto;
-padding: 2rem 4rem;
-font-family: $font;
-
-.head {
-  color: $base-color;
-  font-weight: 700;   
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.desc {
-  font-size: 20px;
- color: $sub-color;
-}
-}
-
+		.desc {
+			font-size: 20px;
+			color: $sub-color;
+		}
+	}
 }

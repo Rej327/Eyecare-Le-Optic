@@ -13,7 +13,6 @@
 }
 
 @mixin mobileNavToogle {
-<<<<<<< HEAD
 	@media (min-width: 800px) {
 		@content;
 	}
@@ -29,19 +28,10 @@
 	@media (min-width: 1300px) {
 		@content;
 	}
-=======
-  @media (min-width: 800px) {
-    @content;
-  }
-
-  
->>>>>>> d33e9704ab5f3becede01989aa20b4759c693aa4
 }
 
 @mixin mobileMinWidth {
-  @media (min-width: 800px) {
-    @content;
-  }
-
-  
+	@media (min-width: 800px) {
+		@content;
+	}
 }
