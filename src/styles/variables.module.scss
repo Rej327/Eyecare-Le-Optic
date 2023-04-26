@@ -1,3 +1,5 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap");
 @import "mixins";
 
@@ -8,472 +10,507 @@ $sub-color: #253941;
 $font: "Poppins", sans-serif;
 $bg-image: url("../assets/hero.jpg");
 $bg-service: url("../assets/services.jpg");
+$bg-appointment: url("../assets/appointmentbg.jpg");
 $header-size: 3.5rem;
 $mobileHeaderSize: 2rem;
 $header-weight: 600;
 $doc-image-radius: 50% 0 50% 0;
 
 .body {
-  margin: 0;
+	margin: 0;
 }
 
 .navSection {
-  width: 1300px;
-  margin: 0 auto;
+	width: 1300px;
+	margin: 0 auto;
 
-  .navigation {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    max-width: 1300px;
-    padding: 10px 0;
-    font-family: $font;
+	.navigation {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		width: 100%;
+		max-width: 1300px;
+		padding: 10px 0;
+		font-family: $font;
 
-    .logoContainer {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-      margin-left: 10px;
+		.logoContainer {
+			display: flex;
+			gap: 5px;
+			align-items: center;
+			margin-left: 10px;
 
-      .logoImage {
-        position: relative;
-      }
+			.logoImage {
+				position: relative;
+			}
 
-      .logoName {
-        color: $color-nav;
-      }
-    }
-    .sectionList {
-      @include mobile() {
-        display: none;
-      }
+			.logoName {
+				color: $color-nav;
+			}
+		}
+		.sectionList {
+			@include mobile() {
+				display: none;
+			}
 
-      margin-left: auto;
-      display: flex;
-      gap: 30px;
-      color: $color-nav;
+			margin-left: auto;
+			display: flex;
+			gap: 30px;
+			color: $color-nav;
 
-      a {
-        overflow: hidden;
-        position: relative;
-        display: inline-block;
-      }
+			a {
+				overflow: hidden;
+				position: relative;
+				display: inline-block;
+			}
 
-      a::before,
-      a::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        left: 0;
-      }
-      a::before {
-        background-color: $hover-color;
-        height: 2px;
-        bottom: 0;
-        transform-origin: 100% 50%;
-        transform: scaleX(0);
-        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-      }
-      a::after {
-        content: attr(data-replace);
-        height: 100%;
-        top: 0;
-        transform-origin: 100% 50%;
-        transform: translate3d(200%, 0, 0);
-        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-        color: $hover-color;
-        font-weight: 600;
-      }
+			a::before,
+			a::after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				left: 0;
+			}
+			a::before {
+				background-color: $hover-color;
+				height: 2px;
+				bottom: 0;
+				transform-origin: 100% 50%;
+				transform: scaleX(0);
+				transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+			}
+			a::after {
+				content: attr(data-replace);
+				height: 100%;
+				top: 0;
+				transform-origin: 100% 50%;
+				transform: translate3d(200%, 0, 0);
+				transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+				color: $hover-color;
+				font-weight: 600;
+			}
 
-      a:hover::before {
-        transform-origin: 0% 50%;
-        transform: scaleX(1);
-      }
-      a:hover::after {
-        transform: translate3d(0, 0, 0);
-      }
+			a:hover::before {
+				transform-origin: 0% 50%;
+				transform: scaleX(1);
+			}
+			a:hover::after {
+				transform: translate3d(0, 0, 0);
+			}
 
-      a span {
-        display: inline-block;
-        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-      }
+			a span {
+				display: inline-block;
+				transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+			}
 
-      a:hover span {
-        transform: translate3d(-200%, 0, 0);
-      }
+			a:hover span {
+				transform: translate3d(-200%, 0, 0);
+			}
 
-      /* Presentational Styles */
+			/* Presentational Styles */
 
-      a {
-        text-decoration: none;
-        color: $color-nav;
-        vertical-align: top;
-      }
-    }
-  }
+			a {
+				text-decoration: none;
+				color: $color-nav;
+				vertical-align: top;
+			}
+		}
+	}
 }
 
 .heroContainer {
-  background-image: $bg-image;
-  background-color: black;
-  object-fit: cover;
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom-left-radius: 40% 10%;
-  border-bottom-right-radius: 40% 10%;
+	background-image: $bg-image;
+	background-color: black;
+	object-fit: cover;
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom-left-radius: 40% 10%;
+	border-bottom-right-radius: 40% 10%;
 
-  .bg {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100vh;
-    display: flex;
-    border-bottom-left-radius: 40% 10%;
-    border-bottom-right-radius: 40% 10%;
-  }
+	.bg {
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 100vh;
+		display: flex;
+		border-bottom-left-radius: 40% 10%;
+		border-bottom-right-radius: 40% 10%;
+	}
 
-  .content {
-    width: fit-content;
-    margin: auto;
-    text-align: center;
+	.content {
+		width: fit-content;
+		margin: auto;
+		text-align: center;
 
-    .title {
-      @include mobile() {
-        font-size: 3rem;
-        letter-spacing: 0.2rem;
-      }
+		.title {
+			@include mobile() {
+				font-size: 3rem;
+				letter-spacing: 0.2rem;
+			}
 
-      color: $base-color;
-      font-size: 5rem;
-      font-family: $font;
-      line-height: 5rem;
-      letter-spacing: 0.5rem;
-    }
+			color: $base-color;
+			font-size: 5rem;
+			font-family: $font;
+			line-height: 5rem;
+			letter-spacing: 0.5rem;
+		}
 
-    .subTitle {
-      @include mobile() {
-        font-size: 1.5rem;
-        letter-spacing: 0.2rem;
-      }
+		.subTitle {
+			@include mobile() {
+				font-size: 1.5rem;
+				letter-spacing: 0.2rem;
+			}
 
-      color: white;
-      font-size: 2rem;
-      font-family: $font;
-    }
-  }
+			color: white;
+			font-size: 2rem;
+			font-family: $font;
+		}
+	}
 }
 
 .welcomeSection {
-  @include mobileMinWidth() {
-    display: flex;
-    justify-content: center;
-    margin: 10rem auto;
-    width: 1300px;
-    align-items: center;
-  }
+	@include mobileMinWidth() {
+		display: flex;
+		justify-content: center;
+		margin: 10rem auto;
+		width: 1300px;
+		align-items: center;
+	}
 
-  margin: 5rem 0;
+	margin: 5rem 0;
 
-  .imgContainer {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	.imgContainer {
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-    .img {
-      border-radius: $doc-image-radius;
-    }
-  }
+		.img {
+			border-radius: $doc-image-radius;
+		}
+	}
 
-  .context {
-    @include mobile() {
-      width: auto;
-      padding: 2rem;
-      text-align: justify;
-    }
+	.context {
+		@include mobile() {
+			width: auto;
+			padding: 2rem;
+			text-align: justify;
+		}
 
-    width: auto;
-    padding: 2rem 4rem;
-    font-family: $font;
+		width: auto;
+		padding: 2rem 4rem;
+		font-family: $font;
 
-    .head {
-      @include mobile() {
-        font-size: 2rem;
-      }
+		.head {
+			@include mobile() {
+				font-size: 2rem;
+			}
 
-      color: $base-color;
-      font-weight: 700;
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      letter-spacing: 0.2rem;
-    }
+			color: $base-color;
+			font-weight: 700;
+			text-align: center;
+			font-size: 2.5rem;
+			margin-bottom: 20px;
+			letter-spacing: 0.2rem;
+		}
 
-    .desc {
-      font-size: 20px;
-      color: $sub-color;
-      margin-bottom: 1rem;
-      letter-spacing: 1px;
-      font-weight: bold;
-    }
+		.desc {
+			font-size: 20px;
+			color: $sub-color;
+			margin-bottom: 1rem;
+			letter-spacing: 1px;
+			font-weight: bold;
+		}
 
-    .name,
-    .title {
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-  }
+		.name,
+		.title {
+			font-size: 1.5rem;
+			font-weight: 700;
+		}
+	}
 }
 
 .serviceBg {
-  background-image: $bg-service;
-  background-color: black;
-  object-fit: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom-right-radius: 50% 20%;
-  border-top-left-radius: 50% 20%;
+	background-image: $bg-service;
+	background-color: black;
+	object-fit: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom-right-radius: 50% 20%;
+	border-top-left-radius: 50% 20%;
 
-  .serviceSection {
-    background-color: #004d6980;
-    font-family: $font;
-    border-bottom-right-radius: 50% 20%;
-    border-top-left-radius: 50% 20%;
+	.serviceSection {
+		background-color: #004d6980;
+		font-family: $font;
+		border-bottom-right-radius: 50% 20%;
+		border-top-left-radius: 50% 20%;
 
-    .head {
-      @include mobile() {
-        font-size: $mobileHeaderSize;
-      }
+		.head {
+			@include mobile() {
+				font-size: $mobileHeaderSize;
+			}
 
-      text-align: center;
-      font-size: $header-size;
-      color: white;
-      line-height: $header-size;
-      padding: 5rem 0;
-      font-weight: $header-weight;
-      letter-spacing: 0.3rem;
-    }
-  }
+			text-align: center;
+			font-size: $header-size;
+			color: white;
+			line-height: $header-size;
+			padding: 5rem 0;
+			font-weight: $header-weight;
+			letter-spacing: 0.3rem;
+		}
+	}
 }
 
 .sectionCard {
-  max-width: 1300px;
-  margin: 2rem auto;
+	max-width: 1300px;
+	margin: 2rem auto;
 
-  .head {
-    @include mobile() {
-      font-size: $mobileHeaderSize;
-      padding: 2rem 0;
-    }
+	.head {
+		@include mobile() {
+			font-size: $mobileHeaderSize;
+			padding: 2rem 0;
+		}
 
-    margin: auto;
-    width: auto;
-    font-family: $font;
-    color: #000000;
-    font-weight: 1000;
-    font-size: 2rem;
-    letter-spacing: 1rem;
-    padding: 5rem 0;
-    text-align: center;
-  }
+		margin: auto;
+		width: auto;
+		font-family: $font;
+		color: #000000;
+		font-weight: 1000;
+		font-size: 2rem;
+		letter-spacing: 1rem;
+		padding: 5rem 0;
+		text-align: center;
+	}
 
-  .cardContainer {
-    width: max-content;
+	.cardContainer {
+		width: max-content;
 
-    .cardImage {
-      position: relative;
-      width: 400px;
-      border-radius: 10px 10px 0 0;
-    }
+		.cardImage {
+			position: relative;
+			width: 400px;
+			border-radius: 10px 10px 0 0;
+		}
 
-    .card {
-      @include smallMobile() {
-        max-width: 400px;
-        height: auto;
-      }
+		.card {
+			@include smallMobile() {
+				max-width: 400px;
+				height: auto;
+			}
 
-      filter: drop-shadow(0 5px 10px 0 #ffffff);
-      width: 400px;
-      height: auto;
-      background-color: #ffffff;
-      padding: 20px;
-      position: relative;
-      z-index: 0;
-      overflow: hidden;
-      transition: 0.6s ease-in;
-      font-family: $font;
-      margin-bottom: 1rem;
-      margin-top: -1rem;
-      border-radius: 0 0 10px 10px;
+			filter: drop-shadow(0 5px 10px 0 #ffffff);
+			width: 400px;
+			height: auto;
+			background-color: #ffffff;
+			padding: 20px;
+			position: relative;
+			z-index: 0;
+			overflow: hidden;
+			transition: 0.6s ease-in;
+			font-family: $font;
+			margin-bottom: 1rem;
+			margin-top: -1rem;
+			border-radius: 0 0 10px 10px;
 
-      &::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: -15px;
-        right: -15px;
-        background: $base-color;
-        height: 320px;
-        width: 25px;
-        border-radius: 32px;
-        transform: scale(1);
-        transform-origin: 50% 50%;
-        transition: transform 0.25s ease-out;
-      }
+			&::before {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				top: -15px;
+				right: -15px;
+				background: $base-color;
+				height: 320px;
+				width: 25px;
+				border-radius: 32px;
+				transform: scale(1);
+				transform-origin: 50% 50%;
+				transition: transform 0.25s ease-out;
+			}
 
-      &:hover::before {
-        transition-delay: 0.2s;
-        transform: scale(40);
-      }
+			&:hover::before {
+				transition-delay: 0.2s;
+				transform: scale(40);
+			}
 
-      &:before {
-        .title {
-          transition: 0.3s ease-out;
-          transition-delay: 0.2s;
-          color: black;
-        }
-        .desc {
-          transition: 0.3s ease-out;
-          transition-delay: 0.2s;
-          color: black;
-        }
-      }
+			&:before {
+				.title {
+					transition: 0.3s ease-out;
+					transition-delay: 0.2s;
+					color: black;
+				}
+				.desc {
+					transition: 0.3s ease-out;
+					transition-delay: 0.2s;
+					color: black;
+				}
+			}
 
-      &:hover {
-        .title {
-          transition: 0.3s ease-in-out;
-          transition-delay: 0.2s;
-          color: white;
-        }
-        .desc {
-          transition: 0.3s ease-in-out;
-          transition-delay: 0.2s;
-          color: white;
-        }
-      }
+			&:hover {
+				.title {
+					transition: 0.3s ease-in-out;
+					transition-delay: 0.2s;
+					color: white;
+				}
+				.desc {
+					transition: 0.3s ease-in-out;
+					transition-delay: 0.2s;
+					color: white;
+				}
+			}
 
-      &:not(:hover) {
-        .title {
-          transition: 0.3s ease-in-out;
-          transition-delay: 0.1s;
-          color: black;
-        }
-        .desc {
-          transition: 0.3s ease-in-out;
-          transition-delay: 0.1s;
-          color: black;
-        }
-      }
-    }
-    .title {
-      margin: 10px 0;
-      font-size: 1.5rem;
-      font-weight: $header-weight;
-    }
-    .desc {
-      text-align: justify;
-      font-size: 1.1rem;
-      font-weight: 500;
-    }
-  }
+			&:not(:hover) {
+				.title {
+					transition: 0.3s ease-in-out;
+					transition-delay: 0.1s;
+					color: black;
+				}
+				.desc {
+					transition: 0.3s ease-in-out;
+					transition-delay: 0.1s;
+					color: black;
+				}
+			}
+		}
+		.title {
+			margin: 10px 0;
+			font-size: 1.5rem;
+			font-weight: $header-weight;
+		}
+		.desc {
+			text-align: justify;
+			font-size: 1.1rem;
+			font-weight: 500;
+		}
+	}
 }
 
 .ourDoctorSection {
-  max-width: 1300px;
-  margin: auto;
-  .headerSection {
-    @include smallMobile() {
-      margin: 10px;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column-reverse;
-      font-family: $font;
+	max-width: 1300px;
+	margin: auto;
+	.headerSection {
+		@include smallMobile() {
+			margin: 10px;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			flex-direction: column-reverse;
+			font-family: $font;
 
-      .headContainer {
-        margin: 1rem 0;
-        text-align: center;
-        .name {
-          font-size: 1.5rem;
-          font-weight: bold;
-          margin: 10px 0;
-        }
-        .location,
-        .number,
-        .email {
-          font-size: 1.2rem;
-        }
-      }
-    }
-    margin: 5rem 0;
-    display: flex;
-    justify-content: space-between;
+			.headContainer {
+				margin: 1rem 0;
+				text-align: center;
+				.name {
+					font-size: 1.5rem;
+					font-weight: bold;
+					margin: 10px 0;
+				}
+				.location,
+				.number,
+				.email {
+					font-size: 1.2rem;
+				}
+			}
+		}
+		margin: 5rem 0;
+		display: flex;
+		justify-content: space-between;
 
-    .image {
-      border-radius: $doc-image-radius;
-    }
+		.image {
+			border-radius: $doc-image-radius;
+		}
 
-    .headContainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-family: $font;
-      letter-spacing: 2px;
-      padding: 0 1rem;
+		.headContainer {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			font-family: $font;
+			letter-spacing: 2px;
+			padding: 0 1rem;
 
-      .name {
-        font-size: 2rem;
-        font-weight: $header-weight;
-        margin: 10px 0;
-      }
+			.name {
+				font-size: 2rem;
+				font-weight: $header-weight;
+				margin: 10px 0;
+			}
 
-      .location,
-      .number,
-      .email {
-        font-size: 1.5rem;
-        margin: 5px 0;
-      }
-    }
-  }
+			.location,
+			.number,
+			.email {
+				font-size: 1.5rem;
+				margin: 5px 0;
+			}
+		}
+	}
 }
 
 .bookSchedSection {
-  display: flex;
-  padding: 1rem;
-  max-width: 900px;
-  justify-content: space-evenly;
-  margin: auto;
-  background: rgb(248, 248, 248);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	display: flex;
+	padding: 1rem;
+	max-width: 900px;
+	justify-content: space-evenly;
+	margin: auto;
+	background: rgb(248, 248, 248);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
-  .image {
-    border-top-left-radius: 40% 20%;
-    border-bottom-right-radius: 40% 20%;
-  }
+	.image {
+		border-top-left-radius: 40% 20%;
+		border-bottom-right-radius: 40% 20%;
+	}
 }
 
 .clinicSection {
-  .head {
-    margin: auto;
-    width: auto;
-    font-family: $font;
-    color: #000000;
-    font-weight: 1000;
-    font-size: 2rem;
-    letter-spacing: 1rem;
-    padding: 5rem 0;
-    text-align: center;
-  }
+	.head {
+		margin: auto;
+		width: auto;
+		font-family: $font;
+		color: #000000;
+		font-weight: 1000;
+		font-size: 2rem;
+		letter-spacing: 1rem;
+		padding: 5rem 0;
+		text-align: center;
+	}
 
-  .clinics {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-  }
+	.clinics {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 6rem;
+	}
+}
+
+.appointmentSection {
+	background-image: $bg-appointment;
+	object-fit: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+	.container {
+		background-color: #00496496;
+		font-family: $font;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.productOffers {
+	margin: 5rem auto;
+	background-color: $base-color;
+	width: auto;
+
+	p {
+		text-align: center;
+		font-size: 2rem;
+		letter-spacing: 10px;
+		color: white;
+		font-weight: 700;
+		padding: 2rem;
+	}
 }
