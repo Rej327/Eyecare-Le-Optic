@@ -1,12 +1,12 @@
 /** @format */
 
 import Image from "next/image";
-import variable from "../styles/variables.module.scss";
+import variable from "../styles/nav.module.scss";
 import logoImg from "../assets/logo.jpg";
 import Hamburger from "./Hamburger";
 import Link from "next/link";
 
-export default function Navigation() {
+export default function NavOtherPage() {
 	return (
 		<div className={variable.navSection}>
 			<div className={variable.navigation}>
