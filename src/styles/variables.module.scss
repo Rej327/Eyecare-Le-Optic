@@ -461,6 +461,8 @@ $doc-image-radius: 50% 0 50% 0;
 }
 
 .clinicSection {
+  max-width: 1300px;
+  margin: auto;
   .head {
     margin: auto;
     width: auto;
@@ -475,9 +477,11 @@ $doc-image-radius: 50% 0 50% 0;
 
   .clinics {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 6rem;
+    padding: 1rem;
   }
 }
 
