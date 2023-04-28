@@ -3,25 +3,76 @@
 @import "variables.module";
 
 .clinicPage {
-	.head {
-		margin: auto;
-		width: auto;
-		font-family: $font;
-		color: $base-color;
-		font-weight: 1000;
-		font-size: 2rem;
-		letter-spacing: 1rem;
-		padding: 10rem 0;
-		text-align: center;
-	}
+  .head {
+    margin: auto;
+    width: auto;
+    font-family: $font;
+    color: $base-color;
+    font-weight: 1000;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+}
 
-	.content {
-		margin: auto;
-		max-width: 1300px;
-		.town {
-			font-size: 2rem;
-			font-weight: 700;
-			letter-spacing: 10px;
-		}
-	}
+.content {
+  margin: auto;
+  max-width: 1300px;
+
+  .location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .header {
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+  }
+
+  .map {
+    object-fit: cover;
+  }
+
+  .details {
+    padding: 5px 2rem;
+    .town {
+      color: $base-color;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .address {
+      font-size: 1.5rem;
+    }
+
+    .schedule {
+      margin: 2rem 0;
+      font-size: 1.5rem;
+      font-weight: bolder;
+
+      p {
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  .clinicPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1300px;
+    margin: auto;
+
+    .clinicImages {
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
 }

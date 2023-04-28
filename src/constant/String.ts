@@ -70,10 +70,60 @@ const welcomeContent = [
   },
 ];
 
+const otherProducts = [
+  {
+    img: list1,
+    title: "Product 1",
+  },
+  {
+    img: list1,
+    title: "Product 2",
+  },
+  {
+    img: list1,
+    title: "Product 3",
+  },
+  {
+    img: list1,
+    title: "Product 4",
+  },
+  {
+    img: list1,
+    title: "Product 5",
+  },
+  {
+    img: list1,
+    title: "Product 6",
+  },
+];
+
+const clinicPhoto = [
+  {
+    img: list1,
+  },
+  {
+    img: list1,
+  },
+  {
+    img: list1,
+  },
+  {
+    img: list1,
+  },
+  {
+    img: list1,
+  },
+  {
+    img: list1,
+  },
+];
+
 export const STRING = {
   heroTitle,
   servicesContent,
   patientCenterContent,
   aboutUsContent,
   welcomeContent,
+  otherProducts,
+  clinicPhoto,
 };
