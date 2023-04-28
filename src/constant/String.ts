@@ -97,6 +97,27 @@ const otherProducts = [
   },
 ];
 
+const clinicPhoto = [
+  {
+    img: list1,
+  },
+  {
+    img: list1,
+  },
+  {
+    img: list1,
+  },
+  {
+    img: list1,
+  },
+  {
+    img: list1,
+  },
+  {
+    img: list1,
+  },
+];
+
 export const STRING = {
   heroTitle,
   servicesContent,
@@ -104,4 +125,5 @@ export const STRING = {
   aboutUsContent,
   welcomeContent,
   otherProducts,
+  clinicPhoto,
 };
