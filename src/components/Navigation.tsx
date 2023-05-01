@@ -32,7 +32,7 @@ export default function Navigation() {
 						</Link>
 					</p>
 					<p>
-						<Link href="/Clinic" id="style-2" data-replace="Clinic">
+						<Link href="#clinic" id="style-2" data-replace="Clinic">
 							<span>Clinic</span>
 						</Link>
 					</p>
