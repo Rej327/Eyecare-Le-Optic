@@ -27,7 +27,7 @@ export default function Hamburger() {
           </li>
           <li>
             <a href="#" id="style-2" data-replace="(+63)-999-999-9999">
-              <span>(+63)-999-999-9999</span>
+              <span>(+63)-917-583-604</span>
             </a>
           </li>
         </ul>

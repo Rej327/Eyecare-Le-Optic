@@ -64,9 +64,9 @@ const aboutUsContent = [
 const welcomeContent = [
   {
     head: "Welcome to Eyecare Le Optique",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quo ex neque ut mollitia nisi magni rerum ratione nostrum aliquam?",
-    name: "Doc. Name Name",
-    title: "Title",
+    desc: "At our eye clinic, we believe that healthy eyes are essential to your overall well-being. Let us help you achieve your best possible vision and quality of life.",
+    name: "Doctor Chadilyn Wachayna",
+    title: "Ophthalmologist",
   },
 ];
 

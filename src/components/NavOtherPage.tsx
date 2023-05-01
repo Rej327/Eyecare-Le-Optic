@@ -37,8 +37,8 @@ export default function NavOtherPage() {
             </a>
           </p>
           <p>
-            <a href="#" id="style-2" data-replace="(+63)-999-999-9999">
-              <span>(+63)-999-999-9999</span>
+            <a href="#" id="style-2" data-replace="(+63)-917-583-604">
+              <span>(+63)-917-583-604</span>
             </a>
           </p>
         </div>

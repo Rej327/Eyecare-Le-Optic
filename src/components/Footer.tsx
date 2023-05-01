@@ -8,14 +8,14 @@ export default function Footer() {
         <div className={variable.findUs}>
           <p className={variable.head}>Find Us</p>
           <p className={variable.bldg}>
-            RayoDeSol Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Mollitia, distinctio.
+            Eyecare le Optique is an optical clinic located at unit 03 Rayo de
+            Sol Building
           </p>
           <p className={variable.brgy}>Brgy. Poblacion 9 Catanauan, Quezon</p>
         </div>
         <div className={variable.contactUs}>
           <p className={variable.head}>Contact Us</p>
-          <p className={variable.num}>(+63)-999-999-9999</p>
+          <p className={variable.num}>(+63)-917-583-604</p>
           <p className={variable.fb}>Facebook</p>
         </div>
         <div className={variable.quickLinks}>
@@ -35,9 +35,6 @@ export default function Footer() {
             </Link>
             <Link href="#">
               <p className={variable.link}>About Us</p>
-            </Link>
-            <Link href="#">
-              <p className={variable.link}>(+63)-999-999-9999</p>
             </Link>
           </div>
         </div>

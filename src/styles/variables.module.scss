@@ -455,8 +455,8 @@ $doc-image-radius: 50% 0 50% 0;
 }
 
 .clinicSection {
-  max-width: 1300px;
-  margin: 10rem auto;
+  margin: 10rem auto 0;
+  background-color: whitesmoke;
   .head {
     margin: auto;
     width: auto;
@@ -475,7 +475,8 @@ $doc-image-radius: 50% 0 50% 0;
     justify-content: center;
     align-items: center;
     gap: 6rem;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -498,7 +499,6 @@ $doc-image-radius: 50% 0 50% 0;
   }
 }
 
-///
 .productOffers {
   margin: 5rem auto;
   width: auto;
