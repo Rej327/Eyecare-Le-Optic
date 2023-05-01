@@ -9,8 +9,8 @@ export default function Clinic2() {
 		<div className={variable.center}>
 			<div className={variable.articleCard}>
 				<div className={variable.content}>
-					<p className={variable.title}>Eyecare Le Optique</p>
-					<p className={variable.location}>Catanauan, Quezon</p>
+					<p className={variable.title}>Eyecare Optical</p>
+					<p className={variable.location}>Lamut, Ifugao</p>
 				</div>
 				<Image
 					src={clinic2}

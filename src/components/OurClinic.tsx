@@ -7,13 +7,13 @@ import Link from "next/link";
 
 export default function OurClinic() {
 	return (
-		<div className={variable.clinicSection}>
+		<div id="clinic" className={variable.clinicSection}>
 			<p className={variable.head}>OUR CLINIC</p>
 			<div className={variable.clinics}>
-				<Link href="/Clinic">
+				<Link href="/CatanauanClinic">
 					<Clinic1 />
 				</Link>
-				<Link href="/Clinic">
+				<Link href="/LamutClinic">
 					<Clinic2 />
 				</Link>
 			</div>
