@@ -9,7 +9,7 @@ import list6 from "@/assets/list6.jpg";
 const heroTitle = [
   {
     title: "Eyecare Le Optique",
-    subTitle: "Eye Clinic",
+    subTitle: "Your eyes, your best tool, take care of them",
     button: "Set Appointment",
   },
 ];

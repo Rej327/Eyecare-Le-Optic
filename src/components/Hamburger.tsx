@@ -1,3 +1,4 @@
+import Link from "next/link";
 import hamburger from "../styles/HamburgerMenu.module.scss";
 
 export default function Hamburger() {
@@ -10,16 +11,24 @@ export default function Hamburger() {
         </span>
         <ul>
           <li>
-            <a href="#">Eye Care Services</a>
+            <Link href="/" id="style-2" data-replace="Home">
+              <span>Home</span>
+            </Link>
           </li>
           <li>
-            <a href="#">Our Doctor</a>
+            <Link href="/Our-Doctor" id="style-2" data-replace="Our Doctor">
+              <span>Our Doctor</span>
+            </Link>
           </li>
           <li>
-            <a href="#">About Us</a>
+            <a href="#" id="style-2" data-replace="About Us">
+              <span>About Us</span>
+            </a>
           </li>
           <li>
-            <a href="#">(+63)-999-999-9999</a>
+            <a href="#" id="style-2" data-replace="(+63)-999-999-9999">
+              <span>(+63)-999-999-9999</span>
+            </a>
           </li>
         </ul>
       </label>

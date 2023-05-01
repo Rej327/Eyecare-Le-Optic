@@ -3,6 +3,7 @@ import Head from "next/head";
 import variable from "../../styles/variables.module.scss";
 import OurDoctor from "@/components/OurDoctor";
 import OurDocHero from "@/components/OurDocHero";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Navigation />
         <OurDocHero />
         <OurDoctor />
+        <Footer />
       </main>
     </>
   );
