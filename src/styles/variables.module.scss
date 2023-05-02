@@ -173,7 +173,7 @@ $doc-image-radius: 15% 0 15% 0;
 }
 
 .welcomeSection {
-  @include mobileMinWidth() {
+  @include minWidth() {
     display: flex;
     justify-content: center;
     margin: 10rem auto;
@@ -313,107 +313,143 @@ $doc-image-radius: 15% 0 15% 0;
     font-weight: 1000;
     font-size: 2rem;
     letter-spacing: 1rem;
-    padding: 5rem 0;
+    padding: 5rem 1rem;
     text-align: center;
   }
 
   .cardContainer {
-    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include minWidth() {
+      width: max-content;
+
+      .cardImage {
+        position: relative;
+        width: 400px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .card {
+        @include smallMobile() {
+          max-width: 400px;
+          height: auto;
+        }
+
+        filter: drop-shadow(0 5px 10px 0 #ffffff);
+        width: 400px;
+        height: auto;
+        background-color: #ffffff;
+        padding: 20px;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        transition: 0.6s ease-in;
+        font-family: $font;
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+        border-radius: 0 0 10px 10px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: -15px;
+          right: -15px;
+          background: $base-color;
+          height: 320px;
+          width: 25px;
+          border-radius: 32px;
+          transform: scale(1);
+          transform-origin: 50% 50%;
+          transition: transform 0.25s ease-out;
+        }
+
+        &:hover::before {
+          transition-delay: 0.2s;
+          transform: scale(40);
+        }
+
+        &:before {
+          .title {
+            transition: 0.3s ease-out;
+            transition-delay: 0.2s;
+            color: black;
+          }
+          .desc {
+            transition: 0.3s ease-out;
+            transition-delay: 0.2s;
+            color: black;
+          }
+        }
+
+        &:hover {
+          .title {
+            transition: 0.3s ease-in-out;
+            transition-delay: 0.2s;
+            color: white;
+          }
+          .desc {
+            transition: 0.3s ease-in-out;
+            transition-delay: 0.2s;
+            color: white;
+          }
+        }
+
+        &:not(:hover) {
+          .title {
+            transition: 0.3s ease-in-out;
+            transition-delay: 0.1s;
+            color: black;
+          }
+          .desc {
+            transition: 0.3s ease-in-out;
+            transition-delay: 0.1s;
+            color: black;
+          }
+        }
+      }
+      .title {
+        text-align: none;
+        margin: 10px 0;
+        font-size: 1.5rem;
+        font-weight: $header-weight;
+      }
+      .desc {
+        text-align: justify;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    }
 
     .cardImage {
       position: relative;
+      object-fit: cover;
       width: 400px;
       border-radius: 10px 10px 0 0;
     }
 
-    .card {
-      @include smallMobile() {
-        max-width: 400px;
-        height: auto;
-      }
-
-      filter: drop-shadow(0 5px 10px 0 #ffffff);
-      width: 400px;
-      height: auto;
-      background-color: #ffffff;
-      padding: 20px;
-      position: relative;
-      z-index: 0;
-      overflow: hidden;
-      transition: 0.6s ease-in;
-      font-family: $font;
-      margin-bottom: 1rem;
-      margin-top: -1rem;
-      border-radius: 0 0 10px 10px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: -15px;
-        right: -15px;
-        background: $base-color;
-        height: 320px;
-        width: 25px;
-        border-radius: 32px;
-        transform: scale(1);
-        transform-origin: 50% 50%;
-        transition: transform 0.25s ease-out;
-      }
-
-      &:hover::before {
-        transition-delay: 0.2s;
-        transform: scale(40);
-      }
-
-      &:before {
-        .title {
-          transition: 0.3s ease-out;
-          transition-delay: 0.2s;
-          color: black;
-        }
-        .desc {
-          transition: 0.3s ease-out;
-          transition-delay: 0.2s;
-          color: black;
-        }
-      }
-
-      &:hover {
-        .title {
-          transition: 0.3s ease-in-out;
-          transition-delay: 0.2s;
-          color: white;
-        }
-        .desc {
-          transition: 0.3s ease-in-out;
-          transition-delay: 0.2s;
-          color: white;
-        }
-      }
-
-      &:not(:hover) {
-        .title {
-          transition: 0.3s ease-in-out;
-          transition-delay: 0.1s;
-          color: black;
-        }
-        .desc {
-          transition: 0.3s ease-in-out;
-          transition-delay: 0.1s;
-          color: black;
-        }
-      }
-    }
     .title {
+      @include minWidth() {
+        text-align: left;
+        padding: 0;
+      }
+      text-align: center;
       margin: 10px 0;
       font-size: 1.5rem;
       font-weight: $header-weight;
+      padding: 0 1rem;
     }
     .desc {
-      text-align: justify;
+      @include minWidth() {
+        text-align: justify;
+        padding: 0;
+      }
+      text-align: center;
       font-size: 1.1rem;
       font-weight: 500;
+      padding: 0 1rem;
     }
   }
 }
