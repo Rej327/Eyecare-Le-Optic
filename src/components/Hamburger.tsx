@@ -21,9 +21,9 @@ export default function Hamburger() {
             </Link>
           </li>
           <li>
-            <a href="#" id="style-2" data-replace="About Us">
+            <Link href="/AboutUs" id="style-2" data-replace="About Us">
               <span>About Us</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" id="style-2" data-replace="(+63)-999-999-9999">

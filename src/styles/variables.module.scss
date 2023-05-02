@@ -14,7 +14,7 @@ $bg-appointment: url("../assets/appointmentbg.jpg");
 $header-size: 3.5rem;
 $mobileHeaderSize: 2rem;
 $header-weight: 600;
-$doc-image-radius: 50% 0 50% 0;
+$doc-image-radius: 15% 0 15% 0;
 
 .body {
   margin: 0;
@@ -150,6 +150,7 @@ $doc-image-radius: 50% 0 50% 0;
 
       color: $base-color;
       font-size: 5rem;
+      font-weight: 700;
       font-family: $font;
       line-height: 5rem;
       letter-spacing: 0.5rem;
@@ -163,7 +164,10 @@ $doc-image-radius: 50% 0 50% 0;
 
       color: white;
       font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
       font-family: $font;
+      margin: 1rem 0;
     }
   }
 }
@@ -193,7 +197,7 @@ $doc-image-radius: 50% 0 50% 0;
   .context {
     @include mobile() {
       width: auto;
-      padding: 2rem;
+      padding: 1rem;
       text-align: justify;
     }
 
@@ -220,10 +224,44 @@ $doc-image-radius: 50% 0 50% 0;
       margin-bottom: 2rem;
       letter-spacing: 1px;
     }
+    .link {
+      margin: 1rem 0;
+
+      a {
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        color: black;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .nameContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      a {
+        margin-top: 0.3rem;
+      }
+      .fb {
+        font-size: 1.4rem;
+        margin: auto 0;
+        color: #0197ce;
+
+        &:hover {
+          color: #6aa8be;
+        }
+      }
+    }
 
     .name,
     .title {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
     }
   }
 }

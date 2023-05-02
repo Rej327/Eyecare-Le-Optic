@@ -11,7 +11,7 @@ import list6 from "@/assets/list6.jpg";
 //HERO 1ST SECTION
 const heroTitle = [
   {
-    title: "Eyecare Le Optique",
+    title: "EYECARE LE OPTIQUE",
     subTitle: "Your eyes, your best tool, take care of them",
     button: "Set Appointment",
   },
@@ -68,7 +68,7 @@ const welcomeContent = [
   {
     head: "Welcome to Eyecare Le Optique",
     desc: "At our eye clinic, we believe that healthy eyes are essential to your overall well-being. Let us help you achieve your best possible vision and quality of life.",
-    name: "Doctor Chadilyn Wachayna",
+    name: "Doc. Chadilyn Wachayna",
     title: "Ophthalmologist",
   },
 ];

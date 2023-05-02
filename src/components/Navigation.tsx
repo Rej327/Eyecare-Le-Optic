@@ -32,9 +32,9 @@ export default function Navigation() {
             </Link>
           </p>
           <p>
-            <a href="#" id="style-2" data-replace="About Us">
+            <Link href="/AboutUs" id="style-2" data-replace="About Us">
               <span>About Us</span>
-            </a>
+            </Link>
           </p>
           <p>
             <a href="#" id="style-2" data-replace="(+63)-917-583-604">
