@@ -480,9 +480,41 @@ $doc-image-radius: 15% 0 15% 0;
   }
 }
 
+.bookSchedSection {
+  display: flex;
+  padding: 1rem;
+  max-width: 900px;
+  justify-content: space-evenly;
+  margin: auto;
+  background: rgb(248, 248, 248);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  .image {
+    @include smallMobile() {
+      display: none;
+    }
+    border-top-left-radius: 40% 20%;
+    border-bottom-right-radius: 40% 20%;
+  }
+}
+
 .ourDoctorSection {
   max-width: 1300px;
   margin: auto;
+
+  .header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    font-weight: bolder;
+    color: $base-color;
+    text-decoration: underline;
+    letter-spacing: 0.5rem;
+    text-underline-offset: 1rem;
+  }
+
   .headerSection {
     @include smallMobile() {
       margin: 10px;
@@ -536,25 +568,6 @@ $doc-image-radius: 15% 0 15% 0;
         margin: 5px 0;
       }
     }
-  }
-}
-
-.bookSchedSection {
-  display: flex;
-  padding: 1rem;
-  max-width: 900px;
-  justify-content: space-evenly;
-  margin: auto;
-  background: rgb(248, 248, 248);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-  .image {
-    @include smallMobile() {
-      display: none;
-    }
-    border-top-left-radius: 40% 20%;
-    border-bottom-right-radius: 40% 20%;
   }
 }
 
