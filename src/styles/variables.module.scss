@@ -208,6 +208,7 @@ $doc-image-radius: 15% 0 15% 0;
     .head {
       @include mobile() {
         font-size: 2rem;
+        padding: 1rem 0;
       }
 
       color: $base-color;
