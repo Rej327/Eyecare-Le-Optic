@@ -550,6 +550,9 @@ $doc-image-radius: 15% 0 15% 0;
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
   .image {
+    @include smallMobile() {
+      display: none;
+    }
     border-top-left-radius: 40% 20%;
     border-bottom-right-radius: 40% 20%;
   }
