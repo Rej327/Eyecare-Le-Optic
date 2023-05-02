@@ -777,3 +777,54 @@ $doc-image-radius: 15% 0 15% 0;
     }
   }
 }
+
+.aboutSection {
+  width: auto;
+
+  .aboutContainer {
+    max-width: 1300px;
+    margin: auto;
+
+    .header {
+      font-size: 2.5rem;
+      text-align: center;
+      letter-spacing: 0.5rem;
+      color: $base-color;
+      text-decoration: underline;
+      text-underline-offset: 0.5rem;
+      margin: 5rem 0;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .img {
+        object-fit: cover;
+      }
+
+      .context {
+        @include mobile() {
+          margin: 2rem 0;
+        }
+        max-width: 600px;
+        padding: 0 1rem;
+
+        .welcome {
+          @include mobile() {
+            text-align: center;
+          }
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          margin: 0.5rem 0;
+          font-size: medium;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
