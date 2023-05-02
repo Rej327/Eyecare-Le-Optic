@@ -11,6 +11,7 @@ import OurClinic from "@/components/OurClinic";
 import Appointment from "@/components/Appointment";
 import ProductOffers from "@/components/ProductOffers";
 import Footer from "@/components/Footer";
+import Commitment from "@/components/Commitment";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <ProductOffers />
         <OurClinic />
         <Appointment />
+        <Commitment />
         <Footer />
       </main>
     </>

@@ -1,3 +1,6 @@
+import qualityEyeCare from "@/assets/qualityeyecare.jpg";
+import patientSatisfaction from "@/assets/patientsatisfaction.jpg";
+import SOTAT from "@/assets/stateofthearttechnology.jpg";
 import list1 from "@/assets/list1.jpg";
 import list2 from "@/assets/list2.jpeg";
 import list3 from "@/assets/list3.jpg";
@@ -118,6 +121,39 @@ const clinicPhoto = [
   },
 ];
 
+const commitment = [
+  {
+    img: qualityEyeCare,
+    head: "Quality Care",
+    desc: "We are committed to providing high-quality eye care services to all of our patients. Our team of experienced professionals is dedicated to helping you achieve optimal eye health.",
+  },
+  {
+    img: patientSatisfaction,
+    head: "Patient Satisfaction",
+    desc: "Our primary goal is to ensure that our patients are satisfied with the care they receive from us. We strive to make each visit as comfortable and stress-free as possible.",
+  },
+  {
+    img: SOTAT,
+    head: "State-of-the-Art Technology",
+    desc: "We invest in the latest technology to ensure that our patients receive the best possible care. Our advanced equipment allows us to diagnose and treat a wide range of eye conditions quickly and effectively.",
+  },
+  {
+    img: qualityEyeCare,
+    head: "Individualized Treatment",
+    desc: " We understand that each patient is unique and has different needs. That's why we take a personalized approach to treatment, tailoring our care to each patient's specific needs and preferences.",
+  },
+  {
+    img: qualityEyeCare,
+    head: "Education and Prevention",
+    desc: "We believe that education and prevention are key to maintaining good eye health. We provide our patients with the information they need to make informed decisions about their eye care and offer tips on how to prevent eye problems before they arise.",
+  },
+  {
+    img: qualityEyeCare,
+    head: "Accessibility and Convenience",
+    desc: "We understand that our patients lead busy lives, which is why we offer flexible scheduling options and strive to minimize wait times. We also accept most insurance plans to ensure that our services are accessible to as many people as possible.",
+  },
+];
+
 export const STRING = {
   heroTitle,
   servicesContent,
@@ -126,4 +162,5 @@ export const STRING = {
   welcomeContent,
   otherProducts,
   clinicPhoto,
+  commitment,
 };

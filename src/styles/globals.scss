@@ -5,7 +5,7 @@
 $color-nav: rgb(243, 242, 242);
 $hover-color: #48ceff;
 $base-color: #48ceff;
-$sub-color: #172429;
+$sub-color: #000000;
 $font: "Poppins", sans-serif;
 $bg-image: url("../assets/hero.jpg");
 
@@ -31,4 +31,5 @@ h1 {
 
 p {
   color: $sub-color;
+  line-height: 2rem;
 }
