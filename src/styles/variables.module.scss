@@ -454,6 +454,32 @@ $doc-image-radius: 15% 0 15% 0;
   }
 }
 
+.clinicSection {
+  margin: 10rem auto 0;
+  background-color: whitesmoke;
+  .head {
+    margin: auto;
+    width: auto;
+    font-family: $font;
+    color: #000000;
+    font-weight: 1000;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding: 5rem 0;
+    text-align: center;
+  }
+
+  .clinics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
+}
+
 .ourDoctorSection {
   max-width: 1300px;
   margin: auto;
@@ -526,32 +552,6 @@ $doc-image-radius: 15% 0 15% 0;
   .image {
     border-top-left-radius: 40% 20%;
     border-bottom-right-radius: 40% 20%;
-  }
-}
-
-.clinicSection {
-  margin: 10rem auto 0;
-  background-color: whitesmoke;
-  .head {
-    margin: auto;
-    width: auto;
-    font-family: $font;
-    color: #000000;
-    font-weight: 1000;
-    font-size: 2rem;
-    letter-spacing: 1rem;
-    padding: 5rem 0;
-    text-align: center;
-  }
-
-  .clinics {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-    padding-top: 1rem;
-    padding-bottom: 5rem;
   }
 }
 
