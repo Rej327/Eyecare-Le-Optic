@@ -8,6 +8,7 @@ import Link from "next/link";
 import { IoLogoFacebook } from "react-icons/io";
 
 const { welcomeContent } = STRING;
+const data = welcomeContent;
 
 export default function Welcome() {
   return (
@@ -21,29 +22,28 @@ export default function Welcome() {
           className={variable.img}
         />
       </div>
-      {welcomeContent.map((data) => (
-        <div className={variable.context}>
-          <p className={variable.head}>{data.head}</p>
-          <p className={variable.desc}>{data.desc}</p>
 
-          <p className={variable.link}>
-            <Link href="/AboutUs">About Us </Link>
-          </p>
-          <p className={variable.link}>
-            <Link href="/Our-Doctor">Our Doctor </Link>
-          </p>
-          <div className={variable.nameContainer}>
-            <p className={variable.name}>{data.name}</p>
-            <Link
-              href="https://www.facebook.com/chadilyn.wachayna"
-              target="_blank"
-            >
-              <IoLogoFacebook className={variable.fb} />
-            </Link>
-          </div>
-          <p className={variable.title}>{data.title}</p>
+      <div className={variable.context}>
+        <p className={variable.head}>{data.head}</p>
+        <p className={variable.desc}>{data.desc}</p>
+
+        <p className={variable.link}>
+          <Link href="/AboutUs">About Us </Link>
+        </p>
+        <p className={variable.link}>
+          <Link href="/Our-Doctor">Our Doctor </Link>
+        </p>
+        <div className={variable.nameContainer}>
+          <p className={variable.name}>{data.name}</p>
+          <Link
+            href="https://www.facebook.com/chadilyn.wachayna"
+            target="_blank"
+          >
+            <IoLogoFacebook className={variable.fb} />
+          </Link>
         </div>
-      ))}
+        <p className={variable.title}>{data.title}</p>
+      </div>
     </div>
   );
 }

@@ -11,7 +11,7 @@ export default function () {
       <p className={variable.header}>OUR COMMITMENT TO YOU</p>
       <div className={variable.content}>
         {commitment.map((data) => (
-          <div className={variable.card}>
+          <div className={variable.card} key={data.id}>
             <Image
               src={data.img}
               alt="clip art"

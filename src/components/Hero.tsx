@@ -7,21 +7,20 @@ import { STRING } from "../constant/String";
 import Link from "next/link";
 
 const { heroTitle } = STRING;
+const data = heroTitle;
 
 export default function Hero() {
   return (
     <div className={variable.heroContainer}>
-      {heroTitle.map((data) => (
-        <div className={variable.bg}>
-          <div className={variable.content}>
-            <p className={variable.title}>{data.title}</p>
-            <p className={variable.subTitle}>{data.subTitle}</p>
-            <Link href="#appointment">
-              <Button className={style.button} text={data.button} />
-            </Link>
-          </div>
+      <div className={variable.bg}>
+        <div className={variable.content}>
+          <p className={variable.title}>{data.title}</p>
+          <p className={variable.subTitle}>{data.subTitle}</p>
+          <Link href="#appointment">
+            <Button className={style.button} text={data.button} />
+          </Link>
         </div>
-      ))}
+      </div>
     </div>
   );
 }

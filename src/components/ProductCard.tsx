@@ -8,7 +8,7 @@ export default function ProductCard() {
   return (
     <div className={variable.productCard}>
       {otherProducts.map((data) => (
-        <div className={variable.content}>
+        <div className={variable.content} key={data.id}>
           <Image
             src={data.img}
             height={315}

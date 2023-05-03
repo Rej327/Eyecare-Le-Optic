@@ -23,7 +23,7 @@ export default function Card() {
         columnClassName={mason.myMasonryGridColumn}
       >
         {servicesContent.map((data) => (
-          <div className={variable.cardContainer}>
+          <div className={variable.cardContainer} key={data.id}>
             <Image
               src={data.img}
               width={0}
