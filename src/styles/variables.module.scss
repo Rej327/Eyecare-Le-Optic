@@ -208,7 +208,7 @@ $doc-image-radius: 15% 0 15% 0;
     .head {
       @include mobile() {
         font-size: 2rem;
-        padding: 1rem 0;
+        padding: 2rem 0;
       }
 
       color: $base-color;
@@ -303,7 +303,8 @@ $doc-image-radius: 15% 0 15% 0;
   .head {
     @include mobile() {
       font-size: $mobileHeaderSize;
-      padding: 2rem 0;
+      padding: 4rem 0 5rem 0;
+      line-height: 2.5rem;
     }
 
     margin: auto;
@@ -414,7 +415,7 @@ $doc-image-radius: 15% 0 15% 0;
         text-align: none;
         margin: 10px 0;
         font-size: 1.5rem;
-        font-weight: $header-weight;
+        padding: 2rem 0;
       }
       .desc {
         text-align: justify;
@@ -439,7 +440,7 @@ $doc-image-radius: 15% 0 15% 0;
       margin: 10px 0;
       font-size: 1.5rem;
       font-weight: $header-weight;
-      padding: 0 1rem;
+      padding: 1rem 0;
     }
     .desc {
       @include minWidth() {
@@ -513,6 +514,7 @@ $doc-image-radius: 15% 0 15% 0;
     text-decoration: underline;
     letter-spacing: 0.5rem;
     text-underline-offset: 1rem;
+    padding-bottom: 2rem;
   }
 
   .headerSection {
@@ -531,6 +533,7 @@ $doc-image-radius: 15% 0 15% 0;
           font-size: 1.5rem;
           font-weight: bold;
           margin: 10px 0;
+          padding: 2rem 0;
         }
         .location,
         .number,
@@ -603,6 +606,7 @@ $doc-image-radius: 15% 0 15% 0;
     font-weight: 700;
     padding-top: 4rem;
     padding-bottom: 8rem;
+    line-height: 2.5rem;
   }
 
   .content {
@@ -743,6 +747,7 @@ $doc-image-radius: 15% 0 15% 0;
     font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: 0.5rem;
+    line-height: 2.5rem;
   }
 
   .content {
@@ -770,9 +775,7 @@ $doc-image-radius: 15% 0 15% 0;
         margin: 1.5rem auto;
         font-weight: bold;
         letter-spacing: 0.5rem;
-      }
-
-      .desc {
+        line-height: 2.5rem;
       }
     }
   }
@@ -814,6 +817,7 @@ $doc-image-radius: 15% 0 15% 0;
         .welcome {
           @include mobile() {
             text-align: center;
+            padding: 1rem 0;
           }
           font-size: 2rem;
           margin-bottom: 1rem;
