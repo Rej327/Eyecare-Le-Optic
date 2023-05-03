@@ -15,7 +15,7 @@ export default function Card() {
 
   return (
     <div className={variable.sectionCard}>
-      <p className={variable.head}>WHAT WILL DO?</p>
+      <p className={variable.head}>WHAT TO DO?</p>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className={mason.myMasonryGrid}
