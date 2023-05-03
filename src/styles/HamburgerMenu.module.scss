@@ -10,18 +10,20 @@
   font-size: 1.5em;
   line-height: 1.6;
   background: $hover-color;
-  overflow-x: hidden;
 
   .label {
     .menu {
+      overflow-x: hidden;
       position: absolute;
-      right: -100px;
+      overflow: hidden;
+      right: 0;
       top: -100px;
       z-index: 100;
-      width: 175px;
-      height: 175px;
+      width: 70px;
+      height: 155px;
       background: #fff;
-      border-radius: 50% 50% 50% 50%;
+      border-top-left-radius: 80% 50%;
+      border-bottom-left-radius: 80% 50%;
       -webkit-transition: 0.5s ease-in-out;
       transition: 0.5s ease-in-out;
       box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
