@@ -3,7 +3,6 @@ import mason from "@/styles/masonry.module.scss";
 import Masonry from "react-masonry-css";
 import { STRING } from "../constant/String";
 import Image from "next/image";
-import serviceList from "@/assets/serviceList.jpg";
 
 const { servicesContent } = STRING;
 export default function Card() {

@@ -1,5 +1,4 @@
 import variable from "@/styles/variables.module.scss";
-import qualityEyeCare from "@/assets/qualityeyecare.jpg";
 import Image from "next/image";
 import { STRING } from "@/constant/String";
 

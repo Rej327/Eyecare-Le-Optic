@@ -1,7 +1,5 @@
 /** @format */
 
-import style from "../styles/globalButton.module.scss";
-
 interface ButtonProps {
   text: string;
   className: string;
