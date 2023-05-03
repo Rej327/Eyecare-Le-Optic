@@ -4,7 +4,7 @@ import { STRING } from "@/constant/String";
 
 const { commitment } = STRING;
 
-export default function () {
+export default function Commitment() {
   return (
     <div className={variable.commitmentSection}>
       <p className={variable.header}>OUR COMMITMENT TO YOU</p>
