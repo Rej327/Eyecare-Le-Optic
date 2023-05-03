@@ -3,27 +3,26 @@ import mason from "@/styles/masonry.module.scss";
 import Masonry from "react-masonry-css";
 import { STRING } from "../constant/String";
 import Image from "next/image";
-import serviceList from "@/assets/serviceList.jpg";
 
 const { servicesContent } = STRING;
 export default function Card() {
   const breakpointColumnsObj = {
     default: 3,
     1024: 3,
-    768: 2,
-    414: 1,
+    900: 2,
+    834: 1,
   };
 
   return (
     <div className={variable.sectionCard}>
-      <p className={variable.head}>WHAT WILL DO?</p>
+      <p className={variable.head}>WHAT TO DO?</p>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className={mason.myMasonryGrid}
         columnClassName={mason.myMasonryGridColumn}
       >
         {servicesContent.map((data) => (
-          <div className={variable.cardContainer}>
+          <div className={variable.cardContainer} key={data.id}>
             <Image
               src={data.img}
               width={0}

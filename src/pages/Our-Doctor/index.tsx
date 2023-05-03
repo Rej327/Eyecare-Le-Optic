@@ -2,7 +2,8 @@ import Navigation from "@/components/Navigation";
 import Head from "next/head";
 import variable from "../../styles/variables.module.scss";
 import OurDoctor from "@/components/OurDoctor";
-import OurDocHero from "@/components/OurDocHero";
+import Footer from "@/components/Footer";
+import NavOtherPage from "@/components/NavOtherPage";
 
 export default function Home() {
   return (
@@ -14,9 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={variable.main}>
-        <Navigation />
-        <OurDocHero />
+        <NavOtherPage />
         <OurDoctor />
+        <Footer />
       </main>
     </>
   );

@@ -1,5 +1,4 @@
 import variable from "@/styles/variables.module.scss";
-import { STRING } from "../constant/String";
 
 export default function Services() {
   return (

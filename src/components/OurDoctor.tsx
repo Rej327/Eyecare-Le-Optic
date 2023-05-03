@@ -5,6 +5,7 @@ import variable from "../styles/variables.module.scss";
 export default function OurDoctor() {
   return (
     <div className={variable.ourDoctorSection}>
+      <p className={variable.header}>OUR DOCTOR</p>
       <div className={variable.headerSection}>
         <div className={variable.headContainer}>
           <p className={variable.name}>Doc. Chadilyn Wachayna</p>

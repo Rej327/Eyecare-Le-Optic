@@ -7,48 +7,43 @@ import Hamburger from "./Hamburger";
 import Link from "next/link";
 
 export default function Navigation() {
-	return (
-		<div className={variable.navSection}>
-			<div className={variable.navigation}>
-				<div className={variable.logoContainer}>
-					<Image
-						src={logoImg}
-						className={variable.logoImage}
-						alt="logo"
-						height={30}
-						width={60}
-					/>
-				</div>
+  return (
+    <div className={variable.navSection}>
+      <div className={variable.navigation}>
+        <div className={variable.logoContainer}>
+          <Image
+            src={logoImg}
+            className={variable.logoImage}
+            alt="logo"
+            height={30}
+            width={60}
+          />
+        </div>
 
-				<div className={variable.sectionList}>
-					<p>
-						<Link href="/" id="style-2" data-replace="Home">
-							<span>Home</span>
-						</Link>
-					</p>
-					<p>
-						<Link href="/Our-Doctor" id="style-2" data-replace="Our Doctor">
-							<span>Our Doctor</span>
-						</Link>
-					</p>
-					<p>
-						<Link href="#clinic" id="style-2" data-replace="Clinic">
-							<span>Clinic</span>
-						</Link>
-					</p>
-					<p>
-						<a href="#" id="style-2" data-replace="About Us">
-							<span>About Us</span>
-						</a>
-					</p>
-					<p>
-						<a href="#" id="style-2" data-replace="(+63)-999-999-9999">
-							<span>(+63)-999-999-9999</span>
-						</a>
-					</p>
-				</div>
-				<Hamburger />
-			</div>
-		</div>
-	);
+        <div className={variable.sectionList}>
+          <p>
+            <Link href="/" id="style-2" data-replace="Home">
+              <span>Home</span>
+            </Link>
+          </p>
+          <p>
+            <Link href="/Our-Doctor" id="style-2" data-replace="Our Doctor">
+              <span>Our Doctor</span>
+            </Link>
+          </p>
+          <p>
+            <Link href="/AboutUs" id="style-2" data-replace="About Us">
+              <span>About Us</span>
+            </Link>
+          </p>
+          <p>
+            <a href="#" id="style-2" data-replace="(+63)-917-583-604">
+              <span>(+63)-917-583-604</span>
+            </a>
+          </p>
+        </div>
+        <Hamburger />
+      </div>
+    </div>
+  );
 }

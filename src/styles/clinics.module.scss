@@ -3,99 +3,99 @@
 @import "variables.module";
 
 .clinicPage {
-	.head {
-		margin: auto;
-		width: auto;
-		font-family: $font;
-		color: $base-color;
-		font-weight: 1000;
-		font-size: 2rem;
-		letter-spacing: 1rem;
-		padding-top: 10rem;
-		padding-bottom: 5rem;
-		text-align: center;
-	}
+  .head {
+    margin: auto;
+    width: auto;
+    font-family: $font;
+    color: $base-color;
+    font-weight: 1000;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
 }
 
 .content {
-	margin: auto;
-	max-width: 1300px;
+  margin: 5rem auto;
+  max-width: 1300px;
 
-	.insideClinic {
-		margin: auto;
-		width: auto;
-		font-family: $font;
-		color: $base-color;
-		font-weight: 1000;
-		font-size: 2rem;
-		letter-spacing: 1rem;
-		padding: 7rem 0;
-		text-align: center;
-	}
-	.location {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		margin: auto;
-	}
+  .insideClinic {
+    margin: auto;
+    width: auto;
+    font-family: $font;
+    color: $base-color;
+    font-weight: 1000;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding: 7rem 0;
+    text-align: center;
+  }
+  .location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+  }
 
-	.header {
-		padding: 1rem 0;
-		font-size: 2rem;
-		font-weight: 700;
-		letter-spacing: 10px;
-		max-width: 1095px;
-		margin: auto;
-		@include mobile() {
-			text-align: center;
-		}
-	}
+  .header {
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    max-width: 1095px;
+    margin: auto;
+    @include mobile() {
+      text-align: center;
+    }
+  }
 
-	.map {
-		object-fit: cover;
-		width: 100%;
-	}
+  .map {
+    object-fit: cover;
+    width: 100%;
+  }
 
-	.details {
-		padding: 5px 2rem;
-		height: auto;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+  .details {
+    padding: 5px 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-		.town {
-			color: $base-color;
-			font-size: 2rem;
-			font-weight: 700;
-		}
+    .town {
+      color: $base-color;
+      font-size: 2rem;
+      font-weight: 700;
+    }
 
-		.address {
-			font-size: 1.5rem;
-		}
+    .address {
+      font-size: 1.5rem;
+    }
 
-		.schedule {
-			margin: 2rem 0;
-			font-size: 1.5rem;
-			font-weight: 500;
+    .schedule {
+      margin: 2rem 0;
+      font-size: 1.5rem;
+      font-weight: 500;
 
-			p {
-				padding-top: 1rem;
-			}
-		}
-	}
+      p {
+        padding-top: 1rem;
+      }
+    }
+  }
 
-	.clinicPhotos {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		gap: 2rem;
-		max-width: 1300px;
-		margin: auto;
+  .clinicPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1300px;
+    margin: auto;
 
-		.clinicImages {
-			object-fit: cover;
-			border-radius: 1rem;
-		}
-	}
+    .clinicImages {
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
 }

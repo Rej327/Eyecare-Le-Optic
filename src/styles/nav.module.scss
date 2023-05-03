@@ -1,104 +1,114 @@
 /** @format */
-
-@import "variables.module";
 @import "mixins";
 
+$color-nav: rgb(243, 242, 242);
+$hover-color: #0197ce;
+$base-color: #0197ce;
+$sub-color: #253941;
+$font: "Poppins", sans-serif;
+$bg-image: url("../assets/hero.jpg");
+$bg-service: url("../assets/services.jpg");
+$bg-appointment: url("../assets/appointmentbg.jpg");
+$header-size: 3.5rem;
+$mobileHeaderSize: 2rem;
+$header-weight: 600;
+$doc-image-radius: 50% 0 50% 0;
+
 .navSection {
-	width: 1300px;
-	margin: 0 auto;
+  width: 1300px;
+  margin: 0 auto;
 
-	.navigation {
-		display: flex;
-		align-items: center;
-		position: absolute;
-		width: 100%;
-		max-width: 1300px;
-		padding: 10px 0;
-		font-family: $font;
+  .navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    padding: 10px 0;
+    font-family: $font;
 
-		@include minWidth() {
-			border-bottom: 2px solid rgb(126, 126, 126);
-		}
+    @include minWidth() {
+      border-bottom: 2px solid rgb(126, 126, 126);
+    }
 
-		.logoContainer {
-			display: flex;
-			gap: 5px;
-			align-items: center;
-			margin-left: 10px;
+    .logoContainer {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      margin-left: 10px;
 
-			.logoImage {
-				position: relative;
-			}
+      .logoImage {
+        position: relative;
+      }
 
-			.logoName {
-				color: $color-nav;
-			}
-		}
-		.sectionList {
-			@include mobile() {
-				display: none;
-			}
+      .logoName {
+        color: $color-nav;
+      }
+    }
+    .sectionList {
+      @include mobile() {
+        display: none;
+      }
 
-			margin-left: auto;
-			display: flex;
-			gap: 30px;
+      margin-left: auto;
+      display: flex;
+      gap: 30px;
 
-			a {
-				overflow: hidden;
-				position: relative;
-				display: inline-block;
-			}
+      a {
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+      }
 
-			a::before,
-			a::after {
-				content: "";
-				position: absolute;
-				width: 100%;
-				left: 0;
-			}
-			a::before {
-				background-color: $hover-color;
-				height: 2px;
-				bottom: 0;
-				transform-origin: 100% 50%;
-				transform: scaleX(0);
-				transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-			}
-			a::after {
-				content: attr(data-replace);
-				height: 100%;
-				top: 0;
-				transform-origin: 100% 50%;
-				transform: translate3d(200%, 0, 0);
-				transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-				color: $hover-color;
-				font-weight: 600;
-			}
+      a::before,
+      a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+      }
+      a::before {
+        background-color: $hover-color;
+        height: 2px;
+        bottom: 0;
+        transform-origin: 100% 50%;
+        transform: scaleX(0);
+        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+      a::after {
+        content: attr(data-replace);
+        height: 100%;
+        top: 0;
+        transform-origin: 100% 50%;
+        transform: translate3d(200%, 0, 0);
+        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+        color: $hover-color;
+        font-weight: 600;
+      }
 
-			a:hover::before {
-				transform-origin: 0% 50%;
-				transform: scaleX(1);
-			}
-			a:hover::after {
-				transform: translate3d(0, 0, 0);
-			}
+      a:hover::before {
+        transform-origin: 0% 50%;
+        transform: scaleX(1);
+      }
+      a:hover::after {
+        transform: translate3d(0, 0, 0);
+      }
 
-			a span {
-				display: inline-block;
-				transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-			}
+      a span {
+        display: inline-block;
+        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+      }
 
-			a:hover span {
-				transform: translate3d(-200%, 0, 0);
-			}
+      a:hover span {
+        transform: translate3d(-200%, 0, 0);
+      }
 
-			/* Presentational Styles */
+      /* Presentational Styles */
 
-			a {
-				text-decoration: none;
-				color: rgb(31, 31, 31);
-				vertical-align: top;
-			}
-		}
-	}
+      a {
+        text-decoration: none;
+        color: rgb(31, 31, 31);
+        vertical-align: top;
+      }
+    }
+  }
 }
