@@ -21,11 +21,6 @@ export default function Hamburger() {
             </Link>
           </li>
           <li>
-            <Link href="#our-clinic" id="style-2" data-replace="Our Clinic">
-              <span>Our Clinic</span>
-            </Link>
-          </li>
-          <li>
             <Link href="/AboutUs" id="style-2" data-replace="About Us">
               <span>About Us</span>
             </Link>

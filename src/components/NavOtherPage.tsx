@@ -3,22 +3,24 @@
 import Image from "next/image";
 import variable from "../styles/nav.module.scss";
 import logoImg from "../assets/logo.jpg";
-import Hamburger from "./Hamburger";
 import Link from "next/link";
+import Hamburger from "./HamburgerOtherPage";
 
 export default function NavOtherPage() {
   return (
     <div className={variable.navSection}>
       <div className={variable.navigation}>
-        <div className={variable.logoContainer}>
-          <Image
-            src={logoImg}
-            className={variable.logoImage}
-            alt="logo"
-            height={30}
-            width={60}
-          />
-        </div>
+        <Link href="/">
+          <div className={variable.logoContainer}>
+            <Image
+              src={logoImg}
+              className={variable.logoImage}
+              alt="logo"
+              height={30}
+              width={60}
+            />
+          </div>
+        </Link>
 
         <div className={variable.sectionList}>
           <p>
@@ -37,9 +39,13 @@ export default function NavOtherPage() {
             </Link>
           </p>
           <p>
-            <a href="#" id="style-2" data-replace="(+63)-917-583-604">
+            <Link
+              href="tel:0917583604"
+              id="style-2"
+              data-replace="(+63)-917-583-604"
+            >
               <span>(+63)-917-583-604</span>
-            </a>
+            </Link>
           </p>
         </div>
         <Hamburger />

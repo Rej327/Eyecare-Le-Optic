@@ -11,13 +11,15 @@ export default function Navigation() {
     <div className={variable.navSection}>
       <div className={variable.navigation}>
         <div className={variable.logoContainer}>
-          <Image
-            src={logoImg}
-            className={variable.logoImage}
-            alt="logo"
-            height={30}
-            width={60}
-          />
+          <Link href="/">
+            <Image
+              src={logoImg}
+              className={variable.logoImage}
+              alt="logo"
+              height={30}
+              width={60}
+            />
+          </Link>
         </div>
 
         <div className={variable.sectionList}>
@@ -32,14 +34,23 @@ export default function Navigation() {
             </Link>
           </p>
           <p>
+            <Link href="#our-clinic" id="style-2" data-replace="Our Clinic">
+              <span>Our Clinic</span>
+            </Link>
+          </p>
+          <p>
             <Link href="/AboutUs" id="style-2" data-replace="About Us">
               <span>About Us</span>
             </Link>
           </p>
           <p>
-            <a href="#" id="style-2" data-replace="(+63)-917-583-604">
+            <Link
+              href="tel:0917583604"
+              id="style-2"
+              data-replace="(+63)-917-583-604"
+            >
               <span>(+63)-917-583-604</span>
-            </a>
+            </Link>
           </p>
         </div>
         <Hamburger />

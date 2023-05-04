@@ -667,6 +667,18 @@ $doc-image-radius: 15% 0 15% 0;
     width: auto;
     gap: 1rem;
 
+    .headContainer {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin-top: -1rem;
+        font-size: 1.2rem;
+        width: auto;
+        color: white;
+      }
+    }
+
     .findUs {
       .head {
         padding-bottom: 0.5rem;
@@ -678,6 +690,16 @@ $doc-image-radius: 15% 0 15% 0;
 
       .bldg {
         max-width: 325px;
+
+        a {
+          text-decoration: none;
+          color: rgb(230, 230, 230);
+
+          &:hover {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+          }
+        }
       }
       .bldg,
       .brgy {
@@ -693,6 +715,19 @@ $doc-image-radius: 15% 0 15% 0;
         letter-spacing: 5px;
         font-weight: bold;
       }
+      .num,
+      .fb {
+        a {
+          text-decoration: none;
+          color: rgb(230, 230, 230);
+
+          &:hover {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+          }
+        }
+      }
+
       .num,
       .fb {
         color: rgb(230, 230, 230);
