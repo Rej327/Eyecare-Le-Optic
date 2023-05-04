@@ -15,14 +15,22 @@ export default function Card() {
 
   return (
     <div className={variable.sectionCard}>
-      <p className={variable.head}>WHAT TO DO?</p>
+      <p data-aos="fade-in" className={variable.head}>
+        WHAT TO DO?
+      </p>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className={mason.myMasonryGrid}
         columnClassName={mason.myMasonryGridColumn}
       >
         {servicesContent.map((data) => (
-          <div className={variable.cardContainer} key={data.id}>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1000"
+            className={variable.cardContainer}
+            key={data.id}
+          >
             <Image
               src={data.img}
               width={0}

@@ -7,10 +7,21 @@ const { commitment } = STRING;
 export default function Commitment() {
   return (
     <div className={variable.commitmentSection}>
-      <p className={variable.header}>OUR COMMITMENT TO YOU</p>
+      <p
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        className={variable.header}
+      >
+        OUR COMMITMENT TO YOU
+      </p>
       <div className={variable.content}>
         {commitment.map((data) => (
-          <div className={variable.card} key={data.id}>
+          <div
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            className={variable.card}
+            key={data.id}
+          >
             <Image
               src={data.img}
               alt="clip art"

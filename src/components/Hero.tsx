@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <div className={variable.heroContainer}>
       <div className={variable.bg}>
-        <div className={variable.content}>
+        <div data-aos="zoom-out-up" className={variable.content}>
           <p className={variable.title}>{data.title}</p>
           <p className={variable.subTitle}>{data.subTitle}</p>
           <Link href="#appointment">

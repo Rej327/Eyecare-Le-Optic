@@ -6,7 +6,13 @@ export default function AboutUs() {
   return (
     <div className={variable.aboutSection}>
       <div className={variable.aboutContainer}>
-        <p className={variable.header}>About Us</p>
+        <p
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          className={variable.header}
+        >
+          About Us
+        </p>
         <div className={variable.content}>
           <Image
             src={clinic1}
@@ -14,8 +20,14 @@ export default function AboutUs() {
             width={500}
             height={500}
             className={variable.img}
+            data-aos="fade-right"
+            data-aos-duration="1500"
           />
-          <div className={variable.context}>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            className={variable.context}
+          >
             <p className={variable.welcome}>Welcome to Eyecare Le Optique</p>
             <p>
               We are a dedicated team of eye care professionals who are

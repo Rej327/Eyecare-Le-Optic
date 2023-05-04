@@ -12,7 +12,11 @@ const data = welcomeContent;
 
 export default function Welcome() {
   return (
-    <div className={variable.welcomeSection}>
+    <div
+      data-aos="fade-in"
+      data-aos-duration="1000"
+      className={variable.welcomeSection}
+    >
       <div className={variable.imgContainer}>
         <Image
           src={profile}
@@ -24,20 +28,50 @@ export default function Welcome() {
       </div>
 
       <div className={variable.context}>
-        <p className={variable.head}>{data.head}</p>
-        <p className={variable.desc}>{data.desc}</p>
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          className={variable.head}
+        >
+          {data.head}
+        </p>
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          className={variable.desc}
+        >
+          {data.desc}
+        </p>
 
-        <p className={variable.link}>
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          className={variable.link}
+        >
           <Link href="/AboutUs">About Us </Link>
         </p>
-        <p className={variable.link}>
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          className={variable.link}
+        >
           <Link href="/Our-Doctor">Our Doctor </Link>
         </p>
-        <p className={variable.link}>
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          className={variable.link}
+        >
           <Link href="#our-clinic">Our Clinic </Link>
         </p>
         <div className={variable.nameContainer}>
-          <p className={variable.name}>{data.name}</p>
+          <p
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            className={variable.name}
+          >
+            {data.name}
+          </p>
           <Link
             href="https://www.facebook.com/chadilyn.wachayna"
             target="_blank"
@@ -45,7 +79,13 @@ export default function Welcome() {
             <IoLogoFacebook className={variable.fb} />
           </Link>
         </div>
-        <p className={variable.title}>{data.title}</p>
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          className={variable.title}
+        >
+          {data.title}
+        </p>
       </div>
     </div>
   );

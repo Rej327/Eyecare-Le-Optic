@@ -4,7 +4,13 @@ export default function Services() {
   return (
     <div className={variable.serviceBg}>
       <div className={variable.serviceSection}>
-        <p className={variable.head}>Our Services</p>
+        <p
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          className={variable.head}
+        >
+          Our Services
+        </p>
       </div>
     </div>
   );

@@ -5,8 +5,18 @@ import variable from "../styles/variables.module.scss";
 export default function OurDoctor() {
   return (
     <div className={variable.ourDoctorSection}>
-      <p className={variable.header}>OUR DOCTOR</p>
-      <div className={variable.headerSection}>
+      <p
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        className={variable.header}
+      >
+        OUR DOCTOR
+      </p>
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        className={variable.headerSection}
+      >
         <div className={variable.headContainer}>
           <p className={variable.name}>Doc. Chadilyn Wachayna</p>
           <p className={variable.location}>Berkeley, CA 44701</p>
@@ -19,6 +29,8 @@ export default function OurDoctor() {
           height={400}
           width={400}
           className={variable.image}
+          data-aos="fade-left"
+          data-aos-duration="1500"
         />
       </div>
     </div>
