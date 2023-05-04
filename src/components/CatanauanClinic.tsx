@@ -8,7 +8,7 @@ import { STRING } from "../constant/String";
 
 const { clinicPhoto } = STRING;
 
-export default function LamutClinic() {
+export default function CatanauanClinic() {
   return (
     <div className={variable.content}>
       <p className={variable.header}>VISIT US</p>
@@ -24,7 +24,10 @@ export default function LamutClinic() {
         </Link>
         <div className={variable.details}>
           <p className={variable.town}>Catanauan, Quezon</p>
-          <p className={variable.address}>Rayodesol Lorem ipsum dolor</p>
+          <p className={variable.address}>
+            Eyecare Le Optique is an optical clinic located at unit 03 Rayo de
+            Sol Building
+          </p>
           <div className={variable.schedule}>
             <p>Clinic Schedule</p>
             <p>MONDAY to SATURDAY</p>

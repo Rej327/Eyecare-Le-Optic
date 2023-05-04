@@ -33,6 +33,9 @@ export default function Welcome() {
         <p className={variable.link}>
           <Link href="/Our-Doctor">Our Doctor </Link>
         </p>
+        <p className={variable.link}>
+          <Link href="#our-clinic">Our Clinic </Link>
+        </p>
         <div className={variable.nameContainer}>
           <p className={variable.name}>{data.name}</p>
           <Link

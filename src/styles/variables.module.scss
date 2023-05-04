@@ -222,11 +222,12 @@ $doc-image-radius: 15% 0 15% 0;
     .desc {
       font-size: 20px;
       color: $sub-color;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       letter-spacing: 1px;
     }
     .link {
-      margin: 1rem 0;
+      margin: 0.5rem 0;
+      letter-spacing: 2px;
 
       a {
         text-decoration: underline;
@@ -235,6 +236,7 @@ $doc-image-radius: 15% 0 15% 0;
 
         &:hover {
           text-decoration: none;
+          color: $base-color;
         }
       }
     }
@@ -243,6 +245,7 @@ $doc-image-radius: 15% 0 15% 0;
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
+      margin-top: 1rem;
 
       a {
         margin-top: 0.3rem;

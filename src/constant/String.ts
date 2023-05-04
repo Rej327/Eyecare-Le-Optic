@@ -75,7 +75,7 @@ const welcomeContent = {
   head: "Welcome to Eyecare Le Optique",
   desc: "At our eye clinic, we believe that healthy eyes are essential to your overall well-being. Let us help you achieve your best possible vision and quality of life.",
   name: "Doc. Chadilyn Wachayna",
-  title: "Ophthalmologist",
+  title: "Optometrist",
 };
 
 const otherProducts = [
