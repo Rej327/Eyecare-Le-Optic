@@ -12,6 +12,7 @@ import Appointment from "@/components/Appointment";
 import ProductOffers from "@/components/ProductOffers";
 import Footer from "@/components/Footer";
 import Commitment from "@/components/Commitment";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       </Head>
       <main className={variable.main}>
         <Navigation />
+        <ScrollToTopButton />
         <Hero />
         <Welcome />
         <Services />
