@@ -6,17 +6,17 @@ import Clinic2 from "./Clinic2";
 import Link from "next/link";
 
 export default function OurClinic() {
-  return (
-    <div id="our-clinic" className={variable.clinicSection}>
-      <p className={variable.head}>OUR CLINIC</p>
-      <div className={variable.clinics}>
-        <Link href="/CatanauanClinic">
-          <Clinic1 />
-        </Link>
-        <Link href="/LamutClinic">
+	return (
+		<div id="our-clinic" className={variable.clinicSection}>
+			<p className={variable.head}>OUR CLINIC</p>
+			<div className={variable.clinics}>
+				<Link href="/CatanauanClinic">
+					<Clinic1 />
+				</Link>
+				{/* <Link href="/LamutClinic">
           <Clinic2 />
-        </Link>
-      </div>
-    </div>
-  );
+        </Link> */}
+			</div>
+		</div>
+	);
 }
