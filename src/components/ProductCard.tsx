@@ -8,7 +8,12 @@ export default function ProductCard() {
   return (
     <div className={variable.productCard}>
       {otherProducts.map((data) => (
-        <div className={variable.content} key={data.id}>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          className={variable.content}
+          key={data.id}
+        >
           <Image
             src={data.img}
             height={315}

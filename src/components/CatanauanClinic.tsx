@@ -8,10 +8,16 @@ import { STRING } from "../constant/String";
 
 const { clinicPhoto } = STRING;
 
-export default function LamutClinic() {
+export default function CatanauanClinic() {
   return (
     <div className={variable.content}>
-      <p className={variable.header}>VISIT US</p>
+      <p
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        className={variable.header}
+      >
+        VISIT US
+      </p>
       <div className={variable.location}>
         <Link href="https://goo.gl/maps/jPZHJTca8tKM1aZh6" target="_blank">
           <Image
@@ -20,22 +26,57 @@ export default function LamutClinic() {
             height={350}
             width={500}
             className={variable.map}
+            data-aos="fade-right"
+            data-aos-duration="1500"
           />
         </Link>
-        <div className={variable.details}>
-          <p className={variable.town}>Catanauan, Quezon</p>
-          <p className={variable.address}>Rayodesol Lorem ipsum dolor</p>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          className={variable.details}
+        >
+          <p
+            data-aos="fade-in"
+            data-aos-duration="1500"
+            className={variable.town}
+          >
+            Catanauan, Quezon
+          </p>
+          <p
+            data-aos="fade-in"
+            data-aos-duration="1500"
+            className={variable.address}
+          >
+            Eyecare Le Optique is an optical clinic located at unit 03 Rayo de
+            Sol Building
+          </p>
           <div className={variable.schedule}>
-            <p>Clinic Schedule</p>
-            <p>MONDAY to SATURDAY</p>
-            <p>From 8:00 AM to 6:00 PM</p>
+            <p data-aos="fade-in" data-aos-duration="1500">
+              Clinic Schedule
+            </p>
+            <p data-aos="fade-in" data-aos-duration="1500">
+              MONDAY to SATURDAY
+            </p>
+            <p data-aos="fade-in" data-aos-duration="1500">
+              From 8:00 AM to 6:00 PM
+            </p>
           </div>
         </div>
       </div>
-      <p className={variable.insideClinic}>INSIDE THE CLINIC</p>
+      <p
+        data-aos="fade-in"
+        data-aos-duration="1500"
+        className={variable.insideClinic}
+      >
+        OUR CLINIC
+      </p>
       <div className={variable.clinicPhotos}>
         {clinicPhoto.map((data) => (
-          <div key={data.id}>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            key={data.id}
+          >
             <Image
               src={data.img}
               alt="clinic"
