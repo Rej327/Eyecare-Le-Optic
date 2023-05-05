@@ -1,8 +1,9 @@
 /** @format */
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap");
 @import "mixins";
 
+$slogan-font: "Dancing Script", cursive;
 $color-nav: rgb(243, 242, 242);
 $hover-color: #0197ce;
 $base-color: #0197ce;
@@ -118,19 +119,33 @@ $doc-image-radius: 15% 0 15% 0;
 }
 
 .heroContainer {
-  background-image: $bg-image;
-  background-color: black;
-  object-fit: cover;
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom-left-radius: 40% 10%;
-  border-bottom-right-radius: 40% 10%;
+  .video {
+    height: 100vh;
+    border-bottom-left-radius: 40% 10%;
+    border-bottom-right-radius: 40% 10%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .videoBg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 40% 10%;
+    border-bottom-right-radius: 40% 10%;
+  }
 
   .bg {
-    background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
     display: flex;
     border-bottom-left-radius: 40% 10%;
@@ -163,11 +178,12 @@ $doc-image-radius: 15% 0 15% 0;
       }
 
       color: white;
-      font-size: 2rem;
-      font-weight: 600;
+      font-size: 3rem;
+      font-weight: 500;
       letter-spacing: 0.2rem;
-      font-family: $font;
+      font-family: $slogan-font;
       margin: 1rem 0;
+      padding: 1rem 0;
     }
   }
 }

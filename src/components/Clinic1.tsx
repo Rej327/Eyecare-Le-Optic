@@ -1,7 +1,7 @@
 /** @format */
 
 import Image from "next/image";
-import clinic1 from "@/assets/clinic1.jpg";
+import clinic from "@/assets/insideclinic3.jpg";
 import variable from "@/styles/ourclinic.module.scss";
 
 export default function Clinic1() {
@@ -13,7 +13,7 @@ export default function Clinic1() {
           <p className={variable.location}>Catanauan, Quezon</p>
         </div>
         <Image
-          src={clinic1}
+          src={clinic}
           alt="Clinic Photo"
           width={350}
           height={350}

@@ -4,6 +4,12 @@ import SOTAT from "@/assets/stateofthearttechnology.jpg";
 import individualizedtreatment from "@/assets/individualizedtreatment.jpg";
 import educationandprevention from "@/assets/educationandprevention.png";
 import accessibilityandconvenience from "@/assets/accessibilityandconvenience.png";
+import insideclinic1 from "@/assets/insideclinic1.jpg";
+import insideclinic2 from "@/assets/insideclinic2.jpg";
+import insideclinic3 from "@/assets/insideclinic3.jpg";
+import insideclinic4 from "@/assets/insideclinic4.jpg";
+import insideclinic5 from "@/assets/insideclinic5.jpg";
+import insideclinic6 from "@/assets/insideclinic6.jpg";
 import list1 from "@/assets/list1.jpg";
 import list2 from "@/assets/list2.jpeg";
 import list3 from "@/assets/list3.jpg";
@@ -14,7 +20,7 @@ import list6 from "@/assets/list6.jpg";
 //HERO 1ST SECTION
 const heroTitle = {
   title: "EYECARE LE OPTIQUE",
-  subTitle: "Your eyes, your best tool, take care of them",
+  subTitle: "Fuller life  through good eyesight",
   button: "Set Appointment",
 };
 
@@ -114,27 +120,27 @@ const otherProducts = [
 const clinicPhoto = [
   {
     id: 1,
-    img: list1,
+    img: insideclinic1,
   },
   {
     id: 2,
-    img: list1,
+    img: insideclinic2,
   },
   {
     id: 3,
-    img: list1,
+    img: insideclinic3,
   },
   {
     id: 4,
-    img: list1,
+    img: insideclinic4,
   },
   {
     id: 5,
-    img: list1,
+    img: insideclinic5,
   },
   {
     id: 6,
-    img: list1,
+    img: insideclinic6,
   },
 ];
 

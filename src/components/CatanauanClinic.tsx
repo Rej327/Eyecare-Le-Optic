@@ -68,7 +68,7 @@ export default function CatanauanClinic() {
         data-aos-duration="1500"
         className={variable.insideClinic}
       >
-        INSIDE THE CLINIC
+        OUR CLINIC
       </p>
       <div className={variable.clinicPhotos}>
         {clinicPhoto.map((data) => (

@@ -12,6 +12,12 @@ const data = heroTitle;
 export default function Hero() {
   return (
     <div className={variable.heroContainer}>
+      <div className={variable.videoCon}>
+        <video autoPlay muted controls loop className={variable.video}>
+          <source src="/heroVid.mp4" type="video/mp4" />
+        </video>
+        <div className={variable.videoBg}></div>
+      </div>
       <div className={variable.bg}>
         <div data-aos="zoom-out-up" className={variable.content}>
           <p className={variable.title}>{data.title}</p>
