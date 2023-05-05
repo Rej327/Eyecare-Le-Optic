@@ -1,5 +1,5 @@
 import variable from "@/styles/variables.module.scss";
-import clinic1 from "@/assets/clinic1.jpg";
+import about from "@/assets/appointmentbg.jpg";
 import Image from "next/image";
 
 export default function AboutUs() {
@@ -15,7 +15,7 @@ export default function AboutUs() {
         </p>
         <div className={variable.content}>
           <Image
-            src={clinic1}
+            src={about}
             alt="clinic"
             width={500}
             height={500}

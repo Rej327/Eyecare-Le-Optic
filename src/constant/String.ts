@@ -10,6 +10,12 @@ import insideclinic3 from "@/assets/insideclinic3.jpg";
 import insideclinic4 from "@/assets/insideclinic4.jpg";
 import insideclinic5 from "@/assets/insideclinic5.jpg";
 import insideclinic6 from "@/assets/insideclinic6.jpg";
+import product1 from "@/assets/product1.jpg";
+import product2 from "@/assets/product2.jpg";
+import product3 from "@/assets/product3.jpg";
+import product4 from "@/assets/product4.jpg";
+import product5 from "@/assets/product5.jpg";
+import product6 from "@/assets/product6.jpg";
 import list1 from "@/assets/list1.jpg";
 import list2 from "@/assets/list2.jpeg";
 import list3 from "@/assets/list3.jpg";
@@ -87,33 +93,33 @@ const welcomeContent = {
 const otherProducts = [
   {
     id: 1,
-    img: list1,
-    title: "Product 1",
+    img: product1,
+    title: "Systane Ultra",
   },
   {
     id: 2,
-    img: list1,
-    title: "Product 2",
+    img: product2,
+    title: "New Look",
   },
   {
     id: 3,
-    img: list1,
-    title: "Product 3",
+    img: product3,
+    title: "Fashion Look Colors",
   },
   {
     id: 4,
-    img: list1,
-    title: "Product 4",
+    img: product4,
+    title: "Lens Care",
   },
   {
     id: 5,
-    img: list1,
-    title: "Product 5",
+    img: product5,
+    title: "All Comfort Formula",
   },
   {
     id: 6,
-    img: list1,
-    title: "Product 6",
+    img: product6,
+    title: "Lens Cleaner",
   },
 ];
 
