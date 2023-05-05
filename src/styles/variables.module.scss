@@ -133,6 +133,13 @@ $doc-image-radius: 15% 0 15% 0;
     background-size: cover;
     top: 0;
     object-fit: cover;
+
+    &::-webkit-media-controls-timeline {
+      display: none;
+    }
+    &::-webkit-media-controls {
+      display: none !important;
+    }
   }
 
   .videoBg {
