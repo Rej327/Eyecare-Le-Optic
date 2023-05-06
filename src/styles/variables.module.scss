@@ -304,6 +304,7 @@ $doc-image-radius: 15% 0 15% 0;
         font-size: 1.4rem;
         margin: auto 0;
         color: #0197ce;
+        width: auto;
 
         &:hover {
           color: #6aa8be;
@@ -315,6 +316,8 @@ $doc-image-radius: 15% 0 15% 0;
       font-size: 1.5rem;
       font-weight: 800;
       letter-spacing: 2px;
+      text-align: left;
+      width: auto;
     }
   }
 }
