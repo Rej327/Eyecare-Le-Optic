@@ -16,7 +16,7 @@ export default function Card() {
   return (
     <div className={variable.sectionCard}>
       <p data-aos="fade-in" className={variable.head}>
-        WHAT TO DO?
+        WHAT WE DO
       </p>
       <Masonry
         breakpointCols={breakpointColumnsObj}

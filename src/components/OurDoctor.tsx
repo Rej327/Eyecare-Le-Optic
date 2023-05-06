@@ -18,10 +18,12 @@ export default function OurDoctor() {
         className={variable.headerSection}
       >
         <div className={variable.headContainer}>
-          <p className={variable.name}>Doc. Chadilyn Wachayna</p>
-          <p className={variable.location}>Berkeley, CA 44701</p>
-          <p className={variable.number}>(555) 555-5555</p>
-          <p className={variable.email}>sample@sample.com</p>
+          <p className={variable.name}>Doc. Chadilyn Wachayna, OD, RN.</p>
+          <p className={variable.location}>
+            12B. Gladiola St. Roxas District, Quezon City Philippines
+          </p>
+          <p className={variable.number}>(+63)-917-583-6604</p>
+          <p className={variable.email}>chadip24@gmail.com</p>
         </div>
         <Image
           src={profile}

@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import variable from "../styles/variables.module.scss";
-import logoImg from "../assets/logo.jpg";
+import logo from "../../public/logo.png";
 import Hamburger from "./Hamburger";
 import Link from "next/link";
+import { BiPhoneCall } from "react-icons/bi";
 
 export default function Navigation() {
   return (
@@ -13,46 +14,73 @@ export default function Navigation() {
         <div className={variable.logoContainer}>
           <Link href="/">
             <Image
-              src={logoImg}
+              src={logo}
               className={variable.logoImage}
               alt="logo"
-              height={30}
-              width={60}
+              height={60}
+              width={130}
+            />
+          </Link>
+          <Link href="/">
+            <Image
+              src={logo}
+              className={variable.logoImagePhone}
+              alt="logo"
+              height={40}
+              width={80}
             />
           </Link>
         </div>
 
         <div className={variable.sectionList}>
           <p>
-            <Link href="/" id="style-2" data-replace="Home">
+            <Link
+              className={variable.link}
+              href="/"
+              id="style-2"
+              data-replace="Home"
+            >
               <span>Home</span>
             </Link>
           </p>
           <p>
-            <Link href="/Our-Doctor" id="style-2" data-replace="Our Doctor">
+            <Link
+              className={variable.link}
+              href="/Our-Doctor"
+              id="style-2"
+              data-replace="Our Doctor"
+            >
               <span>Our Doctor</span>
             </Link>
           </p>
           <p>
-            <Link href="#our-clinic" id="style-2" data-replace="Our Clinic">
+            <Link
+              className={variable.link}
+              href="#our-clinic"
+              id="style-2"
+              data-replace="Our Clinic"
+            >
               <span>Our Clinic</span>
             </Link>
           </p>
           <p>
-            <Link href="/AboutUs" id="style-2" data-replace="About Us">
+            <Link
+              className={variable.link}
+              href="/AboutUs"
+              id="style-2"
+              data-replace="About Us"
+            >
               <span>About Us</span>
             </Link>
           </p>
-          <p>
-            <Link
-              href="tel:0917583604"
-              id="style-2"
-              data-replace="(+63)-917-583-604"
-            >
-              <span>(+63)-917-583-604</span>
-            </Link>
-          </p>
+          <Link href="tel:0917583604">
+            <button className={variable.button}>
+              <BiPhoneCall className={variable.icon} />
+              <span className={variable.buttonLink}>Call Us</span>
+            </button>
+          </Link>
         </div>
+
         <Hamburger />
       </div>
     </div>

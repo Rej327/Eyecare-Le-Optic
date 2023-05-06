@@ -10,6 +10,7 @@ $base-color: #0197ce;
 $sub-color: #253941;
 $font: "Poppins", sans-serif;
 $bg-image: url("../assets/hero.jpg");
+$bg-product: url("../assets/insideclinic4.jpg");
 $bg-service: url("../assets/services.jpg");
 $bg-appointment: url("../assets/appointmentbg.jpg");
 $header-size: 3.5rem;
@@ -33,7 +34,7 @@ $doc-image-radius: 15% 0 15% 0;
     max-width: 1300px;
     padding: 10px 0;
     font-family: $font;
-
+    gap: 1rem;
     .logoContainer {
       display: flex;
       gap: 5px;
@@ -42,10 +43,16 @@ $doc-image-radius: 15% 0 15% 0;
 
       .logoImage {
         position: relative;
+        @include mobile() {
+          display: none;
+        }
       }
 
-      .logoName {
-        color: $color-nav;
+      .logoImagePhone {
+        position: relative;
+        @include mobileMinWidth() {
+          display: none;
+        }
       }
     }
     .sectionList {
@@ -57,21 +64,22 @@ $doc-image-radius: 15% 0 15% 0;
       display: flex;
       gap: 30px;
       color: $color-nav;
+      align-items: center;
 
-      a {
+      .link {
         overflow: hidden;
         position: relative;
         display: inline-block;
       }
 
-      a::before,
-      a::after {
+      .link::before,
+      .link::after {
         content: "";
         position: absolute;
         width: 100%;
         left: 0;
       }
-      a::before {
+      .link::before {
         background-color: $hover-color;
         height: 2px;
         bottom: 0;
@@ -79,7 +87,7 @@ $doc-image-radius: 15% 0 15% 0;
         transform: scaleX(0);
         transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
       }
-      a::after {
+      .link::after {
         content: attr(data-replace);
         height: 100%;
         top: 0;
@@ -90,29 +98,48 @@ $doc-image-radius: 15% 0 15% 0;
         font-weight: 600;
       }
 
-      a:hover::before {
+      .link:hover::before {
         transform-origin: 0% 50%;
         transform: scaleX(1);
       }
-      a:hover::after {
+      .link:hover::after {
         transform: translate3d(0, 0, 0);
       }
 
-      a span {
+      .link span {
         display: inline-block;
         transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
       }
 
-      a:hover span {
+      .link:hover span {
         transform: translate3d(-200%, 0, 0);
       }
 
       /* Presentational Styles */
 
-      a {
+      .link {
         text-decoration: none;
         color: $color-nav;
         vertical-align: top;
+      }
+
+      .button {
+        padding: 1.5rem 2rem;
+        cursor: pointer;
+        background-color: $base-color;
+        border-radius: 1rem;
+        border: none;
+        font-size: 1rem;
+        color: white;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #00658a;
+        }
+
+        .icon {
+          margin-right: 5px;
+        }
       }
     }
   }
@@ -284,10 +311,9 @@ $doc-image-radius: 15% 0 15% 0;
       }
     }
 
-    .name,
-    .title {
-      font-size: 1.3rem;
-      font-weight: bold;
+    .name {
+      font-size: 1.5rem;
+      font-weight: 800;
       letter-spacing: 2px;
     }
   }
@@ -482,7 +508,7 @@ $doc-image-radius: 15% 0 15% 0;
 }
 
 .clinicSection {
-  margin: 10rem auto 0;
+  margin: auto;
   background-color: whitesmoke;
   .head {
     margin: auto;
@@ -622,6 +648,11 @@ $doc-image-radius: 15% 0 15% 0;
 .productOffers {
   margin: 5rem auto;
   width: auto;
+  background-image: $bg-product;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .head {
     text-align: center;
@@ -641,41 +672,46 @@ $doc-image-radius: 15% 0 15% 0;
 }
 
 .productCard {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1300px;
-  justify-content: center;
-  align-items: center;
+  width: auto;
   margin: -5rem auto;
-  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
 
-  .content {
-    position: relative;
-    padding: 1rem;
-    width: 350px;
-    background: #fff;
-    border-radius: 1rem;
-    background: rgba(255, 255, 255, 0);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-
-    .img {
-      object-fit: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  .cardbg {
+    display: flex;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    justify-content: center;
+    align-items: center;
+    margin: -5rem auto;
+    gap: 2rem;
+    .content {
+      position: relative;
+      width: auto;
+      background: white;
       border-radius: 0.5rem;
-    }
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 
-    .title {
-      padding: 1rem 0;
-      text-align: center;
-      font-family: $font;
-      font-size: 1.2rem;
-      font-weight: 600;
-      letter-spacing: 0.2rem;
-      line-height: 2rem;
+      .img {
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
+
+      .title {
+        padding: 1rem 0;
+        text-align: center;
+        font-family: $font;
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        line-height: 2rem;
+        color: rgb(70, 70, 70);
+      }
     }
   }
 }

@@ -4,6 +4,7 @@ import variable from "../../styles/variables.module.scss";
 import OurDoctor from "@/components/OurDoctor";
 import Footer from "@/components/Footer";
 import NavOtherPage from "@/components/NavOtherPage";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <main className={variable.main}>
         <NavOtherPage />
+        <ScrollToTopButton />
         <OurDoctor />
         <Footer />
       </main>

@@ -21,7 +21,7 @@ export default function Hamburger() {
             </Link>
           </li>
           <li>
-            <Link href="#our-clinic" id="style-2" data-replace="Our Clinic">
+            <Link href="CatanauanClinic" id="style-2" data-replace="Our Clinic">
               <span>Our Clinic</span>
             </Link>
           </li>
@@ -32,11 +32,11 @@ export default function Hamburger() {
           </li>
           <li>
             <Link
-              href="tel:0917583604"
+              href="tel:09175836604"
               id="style-2"
-              data-replace="(+63)-917-583-604"
+              data-replace="(+63)-917-583-6604"
             >
-              <span>(+63)-917-583-604</span>
+              <span>(+63)-917-583-6604</span>
             </Link>
           </li>
         </ul>

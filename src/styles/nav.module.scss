@@ -15,20 +15,21 @@ $header-weight: 600;
 $doc-image-radius: 50% 0 50% 0;
 
 .navSection {
-  width: 1300px;
+  width: auto;
   margin: 0 auto;
+  @include minWidth() {
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+  }
 
   .navigation {
     display: flex;
     align-items: center;
     width: 100%;
+    margin: auto;
     max-width: 1300px;
-    padding: 10px 0;
+    padding: 20px 0;
     font-family: $font;
-
-    @include minWidth() {
-      border-bottom: 2px solid rgb(126, 126, 126);
-    }
+    gap: 1rem;
 
     .logoContainer {
       display: flex;
@@ -38,10 +39,17 @@ $doc-image-radius: 50% 0 50% 0;
 
       .logoImage {
         position: relative;
+        @include mobile() {
+          display: none;
+        }
       }
 
-      .logoName {
-        color: $color-nav;
+      .logoImagePhone {
+        position: relative;
+        margin-top: -10px;
+        @include mobileMinWidth() {
+          display: none;
+        }
       }
     }
     .sectionList {
@@ -52,21 +60,22 @@ $doc-image-radius: 50% 0 50% 0;
       margin-left: auto;
       display: flex;
       gap: 30px;
+      align-items: center;
 
-      a {
+      .link {
         overflow: hidden;
         position: relative;
         display: inline-block;
       }
 
-      a::before,
-      a::after {
+      .link::before,
+      .link::after {
         content: "";
         position: absolute;
         width: 100%;
         left: 0;
       }
-      a::before {
+      .link::before {
         background-color: $hover-color;
         height: 2px;
         bottom: 0;
@@ -74,7 +83,7 @@ $doc-image-radius: 50% 0 50% 0;
         transform: scaleX(0);
         transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
       }
-      a::after {
+      .link::after {
         content: attr(data-replace);
         height: 100%;
         top: 0;
@@ -83,31 +92,52 @@ $doc-image-radius: 50% 0 50% 0;
         transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
         color: $hover-color;
         font-weight: 600;
+        padding-top: 0.5rem;
       }
 
-      a:hover::before {
+      .link:hover::before {
         transform-origin: 0% 50%;
         transform: scaleX(1);
       }
-      a:hover::after {
+      .link:hover::after {
         transform: translate3d(0, 0, 0);
       }
 
-      a span {
+      .link span {
         display: inline-block;
         transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
       }
 
-      a:hover span {
+      .link:hover span {
         transform: translate3d(-200%, 0, 0);
       }
 
       /* Presentational Styles */
 
-      a {
+      .link {
         text-decoration: none;
+
+        padding-top: 0.5rem;
         color: rgb(31, 31, 31);
-        vertical-align: top;
+      }
+
+      .button {
+        padding: 1.5rem 2rem;
+        cursor: pointer;
+        background-color: $base-color;
+        border-radius: 1rem;
+        border: none;
+        font-size: 1rem;
+        color: white;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #00658a;
+        }
+
+        .icon {
+          margin-right: 5px;
+        }
       }
     }
   }

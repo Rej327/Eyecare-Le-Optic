@@ -79,13 +79,6 @@ export default function Welcome() {
             <IoLogoFacebook className={variable.fb} />
           </Link>
         </div>
-        <p
-          data-aos="fade-in"
-          data-aos-duration="1000"
-          className={variable.title}
-        >
-          {data.title}
-        </p>
       </div>
     </div>
   );

@@ -30,9 +30,9 @@ export default function Footer() {
             <Link
               href="tel:0917583604"
               id="style-2"
-              data-replace="(+63)-917-583-604"
+              data-replace="(+63)-917-583-6604"
             >
-              (+63)-917-583-604
+              (+63)-917-583-6604
             </Link>
           </p>
           <p className={variable.fb}>
@@ -53,17 +53,14 @@ export default function Footer() {
             <Link href="/">
               <p className={variable.link}>Home</p>
             </Link>
-            <Link href="/CatanauanClinic">
-              <p className={variable.link}>Catanauan, Quezon Clinic</p>
-            </Link>
             <Link href="/Our-Doctor">
               <p className={variable.link}>Our Doctor</p>
             </Link>
-            <Link href="/LamutClinic">
-              <p className={variable.link}>Lamut, Ifugao Clinic</p>
-            </Link>
             <Link href="#">
               <p className={variable.link}>About Us</p>
+            </Link>
+            <Link href="/CatanauanClinic">
+              <p className={variable.link}>Catanauan, Quezon Clinic</p>
             </Link>
           </div>
         </div>
