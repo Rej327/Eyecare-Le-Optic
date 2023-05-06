@@ -729,8 +729,9 @@ $doc-image-radius: 15% 0 15% 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: auto;
+    max-width: 1300px;
     gap: 1rem;
+    margin: auto;
 
     .headContainer {
       display: flex;
