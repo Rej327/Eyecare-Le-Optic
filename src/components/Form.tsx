@@ -8,7 +8,7 @@ export default function From() {
       <div>
         <form
           target="_blank"
-          action="https://formsubmit.co/f3d7f6a2934d7825fdb750d9009453ff"
+          action="https://formsubmit.co/resujeff27@gmail.com"
           method="POST"
         >
           <div className={variable.form}>
